@@ -9,26 +9,24 @@ $(function(){
         var match = target.text()
         $('#myModal').one('show.bs.modal', function () {
             //debugger
-            $.each(['bet_1', 'bet_2', 'bet_x'], function(i, bet){
-                $('#myModal .'+bet).data('addr', data[bet])
-            })
+            //$.each(['bet_1', 'bet_2', 'bet_x'], function(i, bet){
+                //$('#myModal .'+bet).data('addr', data[bet])
+            //})
 
-            $('#match').text(match)
+            //var bet1 = $('.bet_1')
+            //bet1.attr('class').split(/\s/).filter(function(x){ return x.match(/^logo_/) }).map(function(x) {
+                //bet1.removeClass(x)
+            //})
+            //bet1.addClass('logo_'+data.host)
 
-            var bet1 = $('.bet_1')
-            bet1.attr('class').split(/\s/).filter(function(x){ return x.match(/^logo_/) }).map(function(x) {
-                bet1.removeClass(x)
-            })
-            bet1.addClass('logo_'+data.host)
+            //var bet2 = $('.bet_2')
+            //bet2.attr('class').split(/\s/).filter(function(x){ return x.match(/^logo_/) }).map(function(x) {
+                //bet2.removeClass(x)
+            //})
+            //bet2.addClass('logo_'+data.guest)
 
-            var bet2 = $('.bet_2')
-            bet2.attr('class').split(/\s/).filter(function(x){ return x.match(/^logo_/) }).map(function(x) {
-                bet2.removeClass(x)
-            })
-            bet2.addClass('logo_'+data.guest)
-
-            var bet_x = $('.bet_x')
-            bet_x.html('<div class="tie logo_'+ data.host +'" /><h3>Remis</h3><div class="tie logo_'+ data.guest +'" />')
+            //var bet_x = $('.bet_x')
+            //bet_x.html('<div class="tie logo_'+ data.host +'" /><h3>Remis</h3><div class="tie logo_'+ data.guest +'" />')
 
             var keys = (['bet_1','bet_2','bet_x']).map(function(key){ return data[key] })
             var bets = ['1', 'X', '2']
@@ -80,8 +78,6 @@ $(function(){
                 })
             })
         })
-
-        $('#myModal').modal({})
     })
 
     $('.result').click(function(e){
@@ -115,15 +111,6 @@ $(function(){
                     };
                 }
 
-                var a = $('<a />')
-                    a.attr('href', 'bitcoin:'+addr+'?amount=0.005')
-                var qr = $('<img />')
-                    //qr.attr('src', 'https://blockchain.info/en/qr?size=200&data='+addr)
-                    qr.attr('src', '/img/qr/'+addr+'.png')
-                    qr.css({'width': '210px', 'height': '210px'})
-                    qr.addClass('img-thumbnail')
-                $('#qr_container').html(a.append(qr))
-                $('#input_container input').val(addr)
             })
             $('#myModal2').one('shown.bs.modal', function () {
                 $('#input_container input').focus().select()

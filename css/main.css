@@ -309,7 +309,8 @@ textarea {
 .result {
   height: 200px;
   cursor: pointer;
-  background-color: transparent !important
+  background-color: transparent !important;
+  background-size: 0
 }
 
 .result:first-child {
@@ -335,6 +336,7 @@ textarea {
 }
 
 .match_logo:before, .tie:before, .result:before {
+  background-image: inherit;
   background-size: cover;
   background-position: 0% 50%;
   background-repeat: no-repeat;
@@ -352,6 +354,7 @@ textarea {
 
 .match_logo:before {
   background-size: 50%;
+  background-image: inherit
 }
 
 .match:hover .match_logo:before {
