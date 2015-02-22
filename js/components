@@ -1,0 +1,364 @@
+// - DayList
+//  - Day
+//   - MatchList
+//    - Match
+
+var DayList = React.createClass({displayName: "DayList",
+  render: function() {
+    var dayNodes = this.props.data.map(function(day) {
+      return (
+        React.createElement(Day, {data: day})
+      )
+    })
+    return (
+      React.createElement("div", null, 
+        dayNodes
+      )
+    )
+  }
+})
+
+var Day = React.createClass({displayName: "Day",
+  render: function() {
+    return (
+      React.createElement("div", {className: "panel panel-default"}, 
+        React.createElement("div", {className: "panel-heading"}, 
+          React.createElement("h3", {className: "panel-title"},  this.props.data[0] )
+        ), 
+        React.createElement(MatchList, {data:  this.props.data[1] })
+      )
+    )
+  }
+})
+
+var MatchList = React.createClass({displayName: "MatchList",
+  render: function() {
+    var matchNodes = this.props.data.map(function(match) {
+      return (
+        React.createElement(Match, React.__spread({},  match))
+      )
+    })
+    return (
+      React.createElement("div", {className: "panel-body"}, 
+        React.createElement("div", {className: "row"}, 
+          matchNodes
+        )
+      )
+    )
+  }
+})
+
+var Match = React.createClass({displayName: "Match",
+  openModal: function() {
+    React.render(
+      React.createElement(Modal, React.__spread({},  this.props)),
+      document.getElementById('modal')
+    )
+  },
+  render: function() {
+    var hostStyle = { backgroundImage: 'url(/img/logos/'+this.props.host_h+'.png)' }
+    var guestStyle = { backgroundImage: 'url(/img/logos/'+this.props.guest_h+'.png)' }
+    return (
+      React.createElement("div", {className: "match col-xs-12 col-sm-6 col-md-4", onClick: this.openModal}, 
+        React.createElement("div", {href: "#", className: "thumbnail"}, 
+          React.createElement("img", {"data-src": "holder.js/100x180"}), 
+          React.createElement("div", {className: "caption"}, 
+            React.createElement("div", {className: "match_logo", style: hostStyle}), 
+            React.createElement("h3", null, this.props.host, " vs. ", this.props.guest), 
+            React.createElement("div", {className: "match_logo", style: guestStyle})
+          )
+        )
+      )
+    )
+  }
+})
+
+var Modal = React.createClass({displayName: "Modal",
+  getInitialState: function() {
+    return {
+      bets: [],
+      pool: '0 bitów'
+    }
+  },
+
+  componentDidMount: function() {
+    var el = this.getDOMNode()
+    $(el).modal({})
+         .one('hidden.bs.modal', this.onHide)
+
+    var that = this
+    var keys = [this.props.bet_1, this.props.bet_X, this.props.bet_2]
+
+    $.getJSON('https://blockchain.info/multiaddr?active='+keys.join('|')+'&cors=true', function(json){
+      console.log(json)
+
+      //var tbody = $('#bets').html('')
+      var final_balance = json.wallet.final_balance/100
+      that.setState({pool: final_balance+' bitów'})
+
+      var MBTC = 1
+      var pool = []
+
+      // Zlicz pulę typów na każdy wynik
+      $.each(json.txs, function(){
+        var to = this.out[0].addr
+        pool[to] = pool[to] ? pool[to]+this.result : this.result
+      })
+
+      var bets = []
+
+      // Wyświetl wszystkie typy
+      $.each(json.txs, function() {
+        var from = this.inputs[0].prev_out.addr
+        var to = this.out[0].addr
+        bets.push({
+          hash   : this.hash,
+          time   : moment(new Date(this.time*1000)).fromNow(), // time
+          from   : from.substr(0,8),                           // from
+          type   : ['1','X','2'][keys.indexOf(to)],            // typ
+          amount : Math.round(this.result)/100 +' bitów',      // btc
+          roi    : Math.round(final_balance/(pool[to]/this.result)/this.result*100)/100 // kurs
+        })
+      })
+
+      that.setState({bets: bets})
+    })
+  },
+
+  onHide: function() {
+    React.unmountComponentAtNode(document.getElementById('modal'))
+  },
+
+  render: function() {
+    return (
+      React.createElement("div", {className: "modal fade", id: "myModal", tabindex: "-1", role: "dialog"}, 
+        React.createElement("div", {className: "modal-dialog"}, 
+          React.createElement("div", {className: "modal-content"}, 
+            React.createElement("div", {className: "modal-header"}, 
+              React.createElement("button", {type: "button", className: "close", "data-dismiss": "modal"}, "×"), 
+              React.createElement("h4", {className: "modal-title", id: "myModalLabel"}, 
+                "Wytypuj wynik (krok 2/3)"
+              )
+            ), 
+            React.createElement("div", {className: "modal-body text-justify"}, 
+              React.createElement("div", {className: "row"}, 
+                React.createElement(ResultBox, {hash:  this.props.host_h, onClick:  this.openModal.bind(this, this.props.bet_1) }, 
+                  React.createElement("h3", null, " Zwycięstwo gospodarzy ")
+                ), 
+                React.createElement(ResultBox, {onClick:  this.openModal.bind(this, this.props.bet_X) }, 
+                  React.createElement("div", {className: "tie", style: {backgroundImage: 'url(/img/logos/'+this.props.host_h+'.png)'}}), 
+                  React.createElement("h3", null, " Remis "), 
+                  React.createElement("div", {className: "tie", style: {backgroundImage: 'url(/img/logos/'+this.props.guest_h+'.png)'}})
+                ), 
+                React.createElement(ResultBox, {hash:  this.props.guest_h, onClick:  this.openModal.bind(this, this.props.bet_2) }, 
+                  React.createElement("h3", null, " Zwycięstwo gości ")
+                )
+              ), 
+              React.createElement("h3", null, "Ile jest do wygrania?"), 
+              React.createElement("p", null, 
+                "Aktualnie pula nagród za mecz ", React.createElement("span", {id: "match"},  this.props.host, " vs. ",  this.props.guest), " wynosi ", React.createElement("strong", null,  this.state.pool), ". Zostanie ona podzielona pomiędzy tych graczy, którzy poprawnie wytypują wynik meczu, proporcjonalnie do wartości ich zakładu. Na przykład: jeżeli pula nagród wyniesie 100 mBTC, a 50 mBTC z tej puli zostało postawionych na zwycięstwo gospodarzy, to w przypadku zwycięstwa gospodarzy, wypłata wyniesie dwukrotność wpłaty."
+              ), 
+              React.createElement("h3", null, "Dotychczasowe typy"), 
+              React.createElement("p", null, 
+                "Satohinho.pl nie operuje jak żaden z tradycyjnych bukmacherów jakich znasz, gdyż nie podejmuje żadnego ryzyka finansowego - stawką zakładu jest zawsze dokładnie tyle, ile inni gracze zdecydowali się postawić. Oto bieżąca lista wpłat na wybrany mecz (może zmieniać się w czasie):"
+              ), 
+              React.createElement(BetTable, {bets:  this.state.bets}), 
+              React.createElement("p", null, 
+                "* - Kurs końcowy może być inny."
+              )
+            )
+          )
+        )
+      )
+    )
+  },
+  openModal: function(addr) {
+    var el = this.getDOMNode()
+    $(el).modal('hide')
+
+    React.render(
+      React.createElement(Modal2, {addr: addr }),
+      document.getElementById('modal2')
+    )
+  }
+})
+
+var ResultBox = React.createClass({displayName: "ResultBox",
+  render: function() {
+    return (
+      React.createElement("div", {className: "result thumbnail col-xs-12 col-sm-4", "data-toggle": "tooltip", "data-placement": "bottom", style: {backgroundImage: 'url(/img/logos/'+this.props.hash+'.png)'}, onClick:  this.props.onClick}, 
+        this.props.children
+      )
+    )
+  }
+})
+
+var BetTable = React.createClass({displayName: "BetTable",
+  render: function() {
+    var betRows = this.props.bets.map(function(bet) {
+      return (
+        React.createElement(BetRow, React.__spread({},  bet))
+      )
+    })
+    return (
+      React.createElement("table", {className: "table table-striped table-hover"}, 
+        React.createElement("thead", null, 
+          React.createElement("tr", null, 
+            React.createElement("th", null, "Czas"), 
+            React.createElement("th", null, "Nadawca"), 
+            React.createElement("th", null, "Typ"), 
+            React.createElement("th", null, "Kwota"), 
+            React.createElement("th", null, "Kurs*")
+          )
+        ), 
+        React.createElement("tbody", null, 
+          betRows 
+        )
+      )
+    )
+  }
+})
+
+var BetRow = React.createClass({displayName: "BetRow",
+  render: function() {
+    return (
+      React.createElement("tr", null, 
+        React.createElement("td", null, 
+          React.createElement("a", {href: "https://blockchain.info/tx/"+this.props.hash, target: "_blank"}, 
+             this.props.time
+          )
+        ), 
+        React.createElement("td", null, 
+           this.props.from
+        ), 
+        React.createElement("td", null, 
+           this.props.type
+        ), 
+        React.createElement("td", null, 
+           this.props.amount
+        ), 
+        React.createElement("td", null, 
+           this.props.roi
+        )
+      )
+    )
+  }
+})
+
+var Modal2 = React.createClass({displayName: "Modal2",
+  getInitialState: function() {
+      return {
+          visible: false,
+          last_bet: {}
+      }
+  },
+
+  componentDidMount: function() {
+    var el = this.getDOMNode()
+    $(el).modal({})
+         .one('hidden.bs.modal', this.onHide)
+
+    var that = this
+    var socket = this.socket = new WebSocket('wss://ws.blockchain.info/inv')
+    socket.onopen = function(event) {
+        that.timeoutID = null
+        socket.send('{"op":"unconfirmed_sub"}')
+        //socket.send('{"op":"addr_sub", "addr":"'+addr+'"}')
+
+        socket.onmessage = function(event) {
+            var data = JSON.parse(event.data).x
+            var from = data.inputs[0].prev_out.addr
+            // TODO check only for bitcoins send to X addr
+            var value = data.inputs[0].prev_out.value / 100 // bits
+
+            that.setState({
+                visible: true,
+                last_bet: {
+                    addr: from.substr(0,6),
+                    value: Math.round(value),
+                    hash: data.hash
+                }
+            })
+
+            console.log('Client received a message', data);
+            window.clearTimeout(that.timeoutID)
+            that.timeoutID = window.setTimeout(function() {
+                that.setState({
+                    visible: false
+                })
+            }, 1000) // 10 sec
+        };
+    }
+
+
+  },
+
+  onHide: function() {
+    this.socket.close()
+    window.clearTimeout(this.timeoutID)
+    React.unmountComponentAtNode(document.getElementById('modal2'))
+  },
+
+  render: function() {
+    var addr = this.props.addr
+    return (
+      React.createElement("div", {className: "modal fade", id: "myModal2", tabindex: "-1", role: "dialog", "aria-labelledby": "myModalLabel", "aria-hidden": "true"}, 
+        React.createElement("div", {className: "modal-dialog"}, 
+          React.createElement("div", {className: "modal-content"}, 
+            React.createElement("div", {className: "modal-header"}, 
+              React.createElement("button", {type: "button", className: "close", "data-dismiss": "modal", "aria-hidden": "true"}, "×"), 
+              React.createElement("h4", {className: "modal-title", id: "myModalLabel"}, 
+                "Wpłać dowolną kwotę bitcoinów (krok 3/3)"
+              )
+            ), 
+            React.createElement("div", {className: "modal-body text-justify"}, 
+              React.createElement(NewBet, React.__spread({},  this.state)), 
+              React.createElement("h3", null, 
+                "Gratulacje!"
+              ), 
+              React.createElement("span", {id: "qr_container", className: "pull-right", style: { marginLeft: 20}}, 
+                React.createElement("a", {href: "bitcoin:"+ addr +"?amount=0.005"}, 
+                  React.createElement("img", {src: "/img/qr/"+ addr +".png", style: { width: 210, height: 210}, className: "img-thumbnail"})
+                )
+              ), 
+              React.createElement("p", null, 
+                "Jesteś już tylko o krok od wzięcia udziału w zakładzie. Bez rejestracji i bez podawania numeru karty kredytowej! Wystarczy, że prześlesz dowolną kwotę powyżej 5 mBTC na adres:"
+              ), 
+              React.createElement("p", {id: "input_container", className: "text-center"}, React.createElement("input", {disabled: "disabled", value: addr }), React.createElement("button", {type: "button", className: "btn btn-link"}, "kopiuj")), 
+              React.createElement("p", null, 
+                "Wysyłając bitcoiny upewnij się że kontrolujesz adres nadawczy (innymi słowy nie korzystasz z portwela internetowego typu Coinbase. Blockchain.info jest w porządku), gdyż w przypadku wygranej należna kwota jest wysyłana na ten sam adres z którego zakład został złożony."
+              ), 
+              React.createElement("h3", null, 
+                "Czym jest Bitcoin?"
+              ), 
+              React.createElement("p", null, 
+                "Bitcoin to cyfrowa waluta wszechstronnego zastosowania o minimalnych prowizjach i z błyskawicznym czasem transakcji. Dowiedz się więcej o tym jak działa i gdzie ją zakupić na stronie: ", React.createElement("a", {href: "https://bitcoin.org/pl/", target: "_blank"}, "bitcoin.org"), "."
+              )
+            )
+          )
+        )
+      )
+    )
+  }
+})
+
+var NewBet = React.createClass({displayName: "NewBet",
+  render: function() {
+    return (
+        React.createElement("div", {id: "new_bet", className: "alert alert-warning text-center", style: { display: this.props.visible ? '' : 'none'}}, 
+            React.createElement("span", null, 
+                "Nowa wpłata!"
+            ), 
+            React.createElement("a", {href: "https://blockchain.info/tx/"+this.props.last_bet.hash, className: "alert-link", target: "_blank"}, 
+                this.props.last_bet.value, " bitów z adresu ", this.props.last_bet.addr
+            ), "."
+        )
+    )
+  }
+})
+
+React.render(
+  React.createElement(DayList, {data: data }),
+  document.getElementById('content')
+)
+;

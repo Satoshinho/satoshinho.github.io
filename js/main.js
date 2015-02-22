@@ -83,35 +83,7 @@ $(function(){
     $('.result').click(function(e){
         var addr = $(this).data('addr')
         $('#myModal').one('hidden.bs.modal', function () {
-            var socket = new WebSocket('ws://ws.blockchain.info/inv')
 
-            $('#myModal2').one('show.bs.modal', function () {
-
-                socket.onopen = function(event) {
-                    var timeoutID
-                    //socket.send('{"op":"unconfirmed_sub"}')
-                    socket.send('{"op":"addr_sub", "addr":"'+addr+'"}')
-
-                    socket.onmessage = function(event) {
-                        var data = JSON.parse(event.data).x
-                        var from = data.inputs[0].prev_out.addr
-                        // TODO check only for bitcoins send to X addr
-                        var value = data.inputs[0].prev_out.value / 100000 // mBTC
-
-                        $('#new_bet_value').text(Math.round(value))
-                        $('#new_bet_addr').text(from.substr(0,6))
-                        $('#new_bet_tx').attr('href', 'https://blockchain.info/tx/'+data.hash)
-
-                        console.log('Client received a message', data);
-                        window.clearTimeout(timeoutID)
-                        $('#new_bet').fadeIn()
-                        timeoutID = window.setTimeout(function() {
-                            $('#new_bet').fadeOut()
-                        }, 10000) // 10 sec
-                    };
-                }
-
-            })
             $('#myModal2').one('shown.bs.modal', function () {
                 $('#input_container input').focus().select()
                 $('#input_container button').zclip({
