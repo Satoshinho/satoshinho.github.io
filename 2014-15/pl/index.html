@@ -105,7 +105,803 @@
 </div>
 
 <script>
-var data = [["2015-02-22",[{"hour":"14:30","host":"Lech Poznań","guest":"Ruch Chorzów","bet_1":"1Ahcr5Axu6LPt8rqX2sa3V1ZVdg7zXSvYc","bet_X":"17BT8KHDW3Fa5eRc3F8222JUDnMWeePZSJ","bet_2":"16q2mxrYxop6MpvHNspwz2evuBrVGSr7Tj","host_h":"1ac998ca","guest_h":"134a646e"},{"hour":"17:00","host":"Korona Kielce","guest":"Legia Warszawa","bet_1":"1J9yNsk26p8xhNyR3FxDBoFc6keoGeFjYq","bet_X":"12mQN7DdV9SoHPHAPpRHaeW3XkEQGUP4uM","bet_2":"1PoTJGU28M3yH4Ei32XnrhG5xwsirKSKUA","host_h":"1645d4c3","guest_h":"30ee1a9"}]],["2015-02-23",[{"hour":"17:00","host":"Piast Gliwice","guest":"GKS Bełchatów","bet_1":"19MKoUVtQpm8kDtFQvxgYgXCb9nKZu28p1","bet_X":"1Dv9NoiZU8rm8nevvy7991yDtxHKb7sAJW","bet_2":"1BAW4qvsQ9caoJGyZnK8pi5HLbs7NzpWdj","host_h":"aab1adf","guest_h":"e48ee6d9"}]],["2015-02-27",[{"hour":"17:00","host":"Ruch Chorzów","guest":"Lechia Gdańsk","bet_1":"14g4dq9E1vFFTseihyNbLZh7j7jLL3vKQR","bet_X":"1LwZWGRWosCACG9rpLLaSeBGTbQZPf1cUk","bet_2":"1FqUGRnTSqqJZkBWNRMGi1KSBLwaWTHMCM","host_h":"134a646e","guest_h":"e56d80e4"},{"hour":"19:30","host":"Cracovia Kraków","guest":"Lech Poznań","bet_1":"1EQsC1s48oeSDTQPS8AsLgKpjgzn22psSi","bet_X":"1GjzfHbFoYA24f6XsJ5mtohrbzCvJBEvFD","bet_2":"1LNpShLqBqwFsRyvkD2xdYSLbf8EttDsVT","host_h":"2a46acec","guest_h":"1ac998ca"}]],["2015-02-28",[{"hour":"14:30","host":"GKS Bełchatów","guest":"Wisła Kraków","bet_1":"1LmULFksqPVAQpM61wHoMpzoNuo58RGnbq","bet_X":"1P948vLVPT64YCsRFHSsxB5wJjfya5Zuaj","bet_2":"1PTQUyiJ5TSasdJ1s5AP41rBD3trWvDPUK","host_h":"e48ee6d9","guest_h":"9f1b812c"},{"hour":"14:30","host":"Zawisza Bydgoszcz","guest":"Piast Gliwice","bet_1":"178K8LFHJKteKa517CMBK7vd8q7sxvhcaV","bet_X":"13ccuAwjz2ezwf8z11f6kQgohizaoDFt2N","bet_2":"1LEFQ3ZNNpZYiUw6UA7yLNdsvjwW7WNygL","host_h":"28522c84","guest_h":"aab1adf"},{"hour":"17:00","host":"Górnik Zabrze","guest":"Śląsk Wrocław","bet_1":"12gXvLvHrUYW5hbqnBRjmtkgLPrJRnYsNb","bet_X":"1NoVXYCAjmi5EcMY9yoYxvsqhCTBbDCGL5","bet_2":"16vcygyhqAsS1HTYBNVwYxnJNP78fGj5s3","host_h":"f4636514","guest_h":"d087b9e7"}]],["2015-03-01",[{"hour":"14:30","host":"Jagiellonia Białystok","guest":"Korona Kielce","bet_1":"1pjTDLnRmn21VGfRMzaUAhWrBEcu9yEv7","bet_X":"157tazBxPsyyLhvZVfr86qyAu82m5sFbcX","bet_2":"15nv9GMYXugjz3Vs6AyQ98kdcPdo8TmhXz","host_h":"3756286a","guest_h":"1645d4c3"},{"hour":"17:00","host":"Legia Warszawa","guest":"Podbeskidzie Bielsko-Biała","bet_1":"15Hb1FTnZcjesyUyx427ynZYqHpBNSB5xe","bet_X":"1MHgvhzuWc3hnSk1V3uhNsZZn1AFcUac9C","bet_2":"13AMTfAkJdtjAVvPqunijrfWPES1cubnE8","host_h":"30ee1a9","guest_h":"49b1e1af"}]],["2015-03-02",[{"hour":"17:00","host":"Pogoń Szczecin","guest":"Górnik Łęczna","bet_1":"1Jo8jLMQcxPZcg2aVQh9czZ8a1uKeLiAzB","bet_X":"15SRBp8jytkHCMnr8z517yn2r8zmHygJ1N","bet_2":"1DehP9WrCPEtbKrJnTTyfwEGA1KRWQ7cWq","host_h":"f044e675","guest_h":"a12ae773"}]],["2015-03-06",[{"hour":"17:00","host":"Ruch Chorzów","guest":"Pogoń Szczecin","bet_1":"1AJW2YrSgMPWnGHicbc4BYd31ZyBKz43uV","bet_X":"1P1iK5NxWuK96ZQo5qcxnn3Xxm4YMrw3M9","bet_2":"1MASsyJrW76L3Q8xWDHaFdLWpmTwxTX5y9","host_h":"134a646e","guest_h":"f044e675"},{"hour":"19:30","host":"Lech Poznań","guest":"Jagiellonia Białystok","bet_1":"17odob786oujwNQsNAqkZyqf8Vab3KtjYY","bet_X":"1Dj34zAFZUtx8RmKDWZfV9iqUA58wKkAdv","bet_2":"18xqvQCwaExgBSU7EtPCwKXX9jKgeGu9cZ","host_h":"1ac998ca","guest_h":"3756286a"}]],["2015-03-07",[{"hour":"14:30","host":"Piast Gliwice","guest":"Górnik Zabrze","bet_1":"1GrDs7w37A792nxbbKQ2wuNE8QGbTe6aud","bet_X":"1DzJuF5HYkfqAu7foWafYQU1AjF3F62GRN","bet_2":"16vY1jvJ72JAs8fEomqn5qsDzaX2F3fQFQ","host_h":"aab1adf","guest_h":"f4636514"},{"hour":"14:30","host":"Wisła Kraków","guest":"Zawisza Bydgoszcz","bet_1":"1Er7kdNDVdhxML1GDLsmcxAB7bNw2pNsxM","bet_X":"17vUeg1VAR7L1bdhaaznewsmZFunfcxhJZ","bet_2":"1Hqb26eefDBynBRuXa7zvb9kCqT9itC4oc","host_h":"9f1b812c","guest_h":"28522c84"},{"hour":"17:00","host":"Lechia Gdańsk","guest":"GKS Bełchatów","bet_1":"1P78mjztpREAfceyUyedkSMCup3kGpUQQF","bet_X":"1JintfvVQcRb19Wdjs3PFZUb4fQd6ha716","bet_2":"12nHJsSeZoYLxRdfDe7XxbXHpak75wMKdB","host_h":"e56d80e4","guest_h":"e48ee6d9"}]],["2015-03-08",[{"hour":"14:30","host":"Podbeskidzie Bielsko-Biała","guest":"Korona Kielce","bet_1":"15c6gdvyMveiA6AsUKk8QoMSXp8Lkw9u5x","bet_X":"1S3rdVd9JbzvtTw23QksqrLcCg2aJynS2","bet_2":"19fbbLkckoCBQL82PTn1hTiZkc8MsgDJQR","host_h":"49b1e1af","guest_h":"1645d4c3"},{"hour":"17:00","host":"Śląsk Wrocław","guest":"Legia Warszawa","bet_1":"1MJ36mNL327Z6ZjRXgs3QWz3hwBZzMTz7c","bet_X":"1Q9Q4J2M5ZJnyLeXyRdJCNHK7AobdgaUNe","bet_2":"1CXTCm27uBnp8fcHraLiU9tEjnucoZcutG","host_h":"d087b9e7","guest_h":"30ee1a9"}]],["2015-03-09",[{"hour":"17:00","host":"Górnik Łęczna","guest":"Cracovia Kraków","bet_1":"1HhgX6tqSvH6GNxac3r5nq5fDAKW5LAuuH","bet_X":"1PKB8PDwKYDJDgtbobuNRZTDB5mXLxmZeq","bet_2":"12LnwRkmcMZAU72qT8AssVP6xMXgUFrr3x","host_h":"a12ae773","guest_h":"2a46acec"}]],["2015-03-14",[{"hour":"17:00","host":"Cracovia Kraków","guest":"Piast Gliwice","bet_1":"1JAcRJesRnwRHuWqRKQrvZEceCGXFVmpG4","bet_X":"1NB6hHsGG8EX6KWqhMCzNkZzkGS1d9wbXN","bet_2":"12sy4frduAKuENgyPJsXpQQMCR6mk8hGJX","host_h":"2a46acec","guest_h":"aab1adf"},{"hour":"17:00","host":"GKS Bełchatów","guest":"Ruch Chorzów","bet_1":"1FMBEfgFAZud4D6r83e78dQumRQ6LdUToQ","bet_X":"14BPQVFkiAtuSJmCgpMhnLrqmzWV25ptkE","bet_2":"14fWy6MB9pyXb5YXd5wkWqa2cbxuVJwF7b","host_h":"e48ee6d9","guest_h":"134a646e"},{"hour":"17:00","host":"Górnik Zabrze","guest":"Podbeskidzie Bielsko-Biała","bet_1":"1PFs8xEDah1YUGZ5hehdwbgunCpgirEbQ8","bet_X":"155wTiH9FhFnzQ3eyF39y8eN9Zwg87SFaQ","bet_2":"1CXaknAGVWGsXNANQ8Up2576Q4YCtKyBJo","host_h":"f4636514","guest_h":"49b1e1af"},{"hour":"17:00","host":"Jagiellonia Białystok","guest":"Górnik Łęczna","bet_1":"1DMeUHN5fyWRhpvebS3SckAfq5SgH5oXn","bet_X":"1CbxY8X2B3jRLfeh25BasGHvAYSvXUDRax","bet_2":"1GSWUZAtRVzwDsGhDsXsXpqabdP3hXCrgV","host_h":"3756286a","guest_h":"a12ae773"},{"hour":"17:00","host":"Korona Kielce","guest":"Śląsk Wrocław","bet_1":"1ByNb76euJyjmoy7zjgf17ReF3uLSjPd5i","bet_X":"1EB43nTjxrsRWsQAc6LHjqH3oxdFe5qnTk","bet_2":"1EheALtWaTzsqZBxZ9b1sivg51rdimXoaD","host_h":"1645d4c3","guest_h":"d087b9e7"},{"hour":"17:00","host":"Legia Warszawa","guest":"Wisła Kraków","bet_1":"12R6TStLbakju7MuGwcmhHkj68Ck8fxjSZ","bet_X":"1AX4CeueAVey4ATGVUdfB1CwRsVfuWdzP4","bet_2":"14rAYXQY6UZg2u14gkv2fgAeTjHAVarqEh","host_h":"30ee1a9","guest_h":"9f1b812c"},{"hour":"17:00","host":"Pogoń Szczecin","guest":"Lechia Gdańsk","bet_1":"15sLSYEdeEwEgmds7X5vyktehdHFVimST7","bet_X":"1PQyFUjb68prNKw4izLWuReUtS2RdMmWe9","bet_2":"15GeMtwMPkFo26mkF3TfrQznQKEhjGugAz","host_h":"f044e675","guest_h":"e56d80e4"},{"hour":"17:00","host":"Zawisza Bydgoszcz","guest":"Lech Poznań","bet_1":"18NVND7GLf6JcgwLgxV7A8uaQqbsxqjHM4","bet_X":"1BwPDX3qRc9VRCMKSxRtLCbcLqdEazoqcf","bet_2":"1GCMNA5tQxdQvSN5G6FaMCQjqMXu5363vi","host_h":"28522c84","guest_h":"1ac998ca"}]],["2015-03-21",[{"hour":"17:00","host":"Górnik Łęczna","guest":"Śląsk Wrocław","bet_1":"1FdJiH36i1jRmDdTdAZt3byjC8mHaoyfSu","bet_X":"1GPZQ92c4fjWVXpdXSYbyAqxd9wRk6y2t3","bet_2":"1ECUgAewJjwVuH3SASxCzyNcadKxdm9hEx","host_h":"a12ae773","guest_h":"d087b9e7"},{"hour":"17:00","host":"Lech Poznań","guest":"Legia Warszawa","bet_1":"1682kGfd3AUBWFpKV5syL4SoeyWEWkEV19","bet_X":"12hcgeExwWcG1acDJVHfBo73bC7h5f5S37","bet_2":"1CPGdX2qrQBAGWe1GtthGJPCfWS74oCaSg","host_h":"1ac998ca","guest_h":"30ee1a9"},{"hour":"17:00","host":"Lechia Gdańsk","guest":"Górnik Zabrze","bet_1":"1NuqRNJKwUCJh3cG6drccH6sLZpEpiewAf","bet_X":"1MneTC8SLVpL8byairEfj529yHGEMu3ofw","bet_2":"15mFBDMwYUnaUFoTzJYiWyS7REks5mLuyf","host_h":"e56d80e4","guest_h":"f4636514"},{"hour":"17:00","host":"Piast Gliwice","guest":"Korona Kielce","bet_1":"1CXtZaHuBPXGJ3DdTFkKaQ4CMWBYDFjx2G","bet_X":"1G3MXsZmBW4oEVF9tnMfY9jGvmAqiPvNNZ","bet_2":"19vXsTqwNCESB5qoeCU4pbRqhFmDw9kDG6","host_h":"aab1adf","guest_h":"1645d4c3"},{"hour":"17:00","host":"Podbeskidzie Bielsko-Biała","guest":"Jagiellonia Białystok","bet_1":"1ChJdfE3KXQMfVD5o418qHteVTeSiXARGc","bet_X":"1CudM6LXrWd4JrvkjztziAui9MNaTSRDZM","bet_2":"1KbvNhJdbK2uw2BNDBbXxN1Usx6dFKbLdg","host_h":"49b1e1af","guest_h":"3756286a"},{"hour":"17:00","host":"Pogoń Szczecin","guest":"GKS Bełchatów","bet_1":"1L17pYTai6k2zdM99Ah7tkXGi9f9FptRo8","bet_X":"1gwf49mMLDQN1kTCiRSXFvZF9SoTR9euh","bet_2":"1NpVe8WgKFwUbreZxBSpmuY3zDY3kU7Ksy","host_h":"f044e675","guest_h":"e48ee6d9"},{"hour":"17:00","host":"Ruch Chorzów","guest":"Zawisza Bydgoszcz","bet_1":"1HszbX7sBDJ7LezSiKod9SW1GPDnZHjJRq","bet_X":"1RV2W1VPeK9eyZ5WKFC6ofSc3RCYS5AZS","bet_2":"1KrSc72ajmJrAy8v7HWz1tJrcuawtYgkz7","host_h":"134a646e","guest_h":"28522c84"},{"hour":"17:00","host":"Wisła Kraków","guest":"Cracovia Kraków","bet_1":"1HT42CApZfiwkjRFV4WssZ58svsm1GqaDM","bet_X":"19euAwXdn1xAhoqK5ibRPHzbMRMHPBtDn4","bet_2":"1GLQdwWYQh6CeKX1rrc4fLRJtcymhFa88W","host_h":"9f1b812c","guest_h":"2a46acec"}]],["2015-04-04",[{"hour":"16:00","host":"Cracovia Kraków","guest":"Lechia Gdańsk","bet_1":"13FUy62MfzBmBE6pNmYLZmExyRxKR92SgZ","bet_X":"1LxY1yMoY1nQeFziGy8Sd1QzrrVTbNZF4T","bet_2":"14ftDBWEBC5u7w2dhsCSkgtZ7bJA5HSguL","host_h":"2a46acec","guest_h":"e56d80e4"},{"hour":"16:00","host":"GKS Bełchatów","guest":"Lech Poznań","bet_1":"15vjrbpUMF5mMH8hLSLtYfJV83V8wziGQP","bet_X":"1PydBWr2TKjhzSJqdb2niC9ZUs3Mi8oZhz","bet_2":"1BQcwezu1dxtAG76H3SPuzFZZh9B7a8mHy","host_h":"e48ee6d9","guest_h":"1ac998ca"},{"hour":"16:00","host":"Górnik Zabrze","guest":"Ruch Chorzów","bet_1":"1Dj7GPEyJ4AbzNoZQxNLf2eaHwnoUpzyqk","bet_X":"17VdnYnsx2pe72zMyhrqReMXNrzPeUNTKC","bet_2":"1MEbf9Ask217RV73geS1B1Zohv7L4Ub96f","host_h":"f4636514","guest_h":"134a646e"},{"hour":"16:00","host":"Jagiellonia Białystok","guest":"Wisła Kraków","bet_1":"1HVfU6SckR22p7dsMPDWdQtPvds6kCKg9Y","bet_X":"1E6dDFZoutHPhc6wVAhqaPPauZtUiAHM4n","bet_2":"1FnntiPq1Mm8kbS9UpzzMyfCH2oo1NeSxt","host_h":"3756286a","guest_h":"9f1b812c"},{"hour":"16:00","host":"Korona Kielce","guest":"Górnik Łęczna","bet_1":"1CkPMzvMRbGXYvcFXiPxSwGzvTxQoS91Zo","bet_X":"1L6Jkb3iq2WakDabLKp6jfdiKRuCfUPW1Y","bet_2":"1H5mZ9Wk9D3aS2MYdYmXq8pdK3G1AJSp17","host_h":"1645d4c3","guest_h":"a12ae773"},{"hour":"16:00","host":"Legia Warszawa","guest":"Piast Gliwice","bet_1":"1BaGq7LKQR7UXN1eDdfGYaQczRFeongo8U","bet_X":"1Lmv3DSqSRNxLTpdut6ANsDNDUfW3xHcHM","bet_2":"1HF4UNggPgfcWmKD4HiueDMxsmbsxLgvG1","host_h":"30ee1a9","guest_h":"aab1adf"},{"hour":"16:00","host":"Śląsk Wrocław","guest":"Podbeskidzie Bielsko-Biała","bet_1":"1CCTU4EHazRDcg7zGdPqrxFUyFNMudjZAo","bet_X":"1P6PMVRbCRWaZiqpMbq4DTmN2TBTk3YpQr","bet_2":"1FUFX4jj1gSbJQLybcZErN5ZCErFkphdGD","host_h":"d087b9e7","guest_h":"49b1e1af"},{"hour":"16:00","host":"Zawisza Bydgoszcz","guest":"Pogoń Szczecin","bet_1":"1Hp8iCo2iHCnGVobBQRc3C7DG8jQ69i7qm","bet_X":"18x9JpZwN8F64dSd4VHrPbccoTpS8bqPH","bet_2":"1QGVvZJqMNystabb5s9SBDk7BNqfB7FnzS","host_h":"28522c84","guest_h":"f044e675"}]],["2015-04-11",[{"hour":"16:00","host":"GKS Bełchatów","guest":"Zawisza Bydgoszcz","bet_1":"1Kms78pLiREVKGyy7VDW3yp4YwFDxFG5SG","bet_X":"1AMh9J77bW4Jzbff7MCRZ1hMRMSXxziFob","bet_2":"1msWZesADyJGY94zfJS8A7hUSVNHvsmj3","host_h":"e48ee6d9","guest_h":"28522c84"},{"hour":"16:00","host":"Górnik Łęczna","guest":"Podbeskidzie Bielsko-Biała","bet_1":"1H9XtLrzAdCcRqYzYGsWGSdRN9zhs3Bu7z","bet_X":"1e46Ub3NPEhXtKxxujFgBabqbRKgjSxYo","bet_2":"11fPx3im3VyaSgTNEVTVnxDSBF1GV3Y7J","host_h":"a12ae773","guest_h":"49b1e1af"},{"hour":"16:00","host":"Lech Poznań","guest":"Korona Kielce","bet_1":"1GumMC7tkURMv85dQGgm3CV14d5i58NsCK","bet_X":"12qcwNs7A5Lv1Fj1Mw96Vv7mznMncd1VY4","bet_2":"1MbEW4aihzh6AD6q6evS2ttVLbo2GceHe2","host_h":"1ac998ca","guest_h":"1645d4c3"},{"hour":"16:00","host":"Lechia Gdańsk","guest":"Legia Warszawa","bet_1":"1GTukNDe1DWCXiso2GY7yqYiptWgtCFGJ5","bet_X":"1LVNP5vvfyLmZb5QxkAyYEVCqaTZFZwLXV","bet_2":"1E33DScmoxRryj3PHLtSpDVYDZaFFjuMk","host_h":"e56d80e4","guest_h":"30ee1a9"},{"hour":"16:00","host":"Piast Gliwice","guest":"Śląsk Wrocław","bet_1":"17FiyLqtDYEuQfhKNfd2o8AT9eTEvxjcjn","bet_X":"1KGL7We4smXtoMuCWy8NqQH4MSND5gfUWH","bet_2":"15A3EkH95VDSjLc7Ei48ftg1zwRi6DVCuc","host_h":"aab1adf","guest_h":"d087b9e7"},{"hour":"16:00","host":"Pogoń Szczecin","guest":"Jagiellonia Białystok","bet_1":"1VhoMNsfE7uhbuLXgHfxZLL1mcDQjViHr","bet_X":"1HdDv5nQrYo1ntZnpSnY4Zs7WDpmnUm3zb","bet_2":"1D2fUikAPwLPvSFS6n1Yb4mNNywM9aJoCH","host_h":"f044e675","guest_h":"3756286a"},{"hour":"16:00","host":"Ruch Chorzów","guest":"Cracovia Kraków","bet_1":"126xqy72xeukEzGVHBydnaGz5SuDJoz6Hw","bet_X":"1Kcz8s5qM9mhX6DkwBZVYUXTiUkdJM1azZ","bet_2":"1JDejLurEe6p8amo6HBS59bhz3ayDLrB7r","host_h":"134a646e","guest_h":"2a46acec"},{"hour":"16:00","host":"Wisła Kraków","guest":"Górnik Zabrze","bet_1":"1BUr89YeLmSz9NKDrTrW89qaCe5gHnva8","bet_X":"15itRzxveGRDVTpcyR2TVgfWUTF8d3ezke","bet_2":"1AJS1nGLy5EghmHzFjUpC8P1hJPWbo5FJB","host_h":"9f1b812c","guest_h":"f4636514"}]],["2015-04-18",[{"hour":"16:00","host":"Cracovia Kraków","guest":"Pogoń Szczecin","bet_1":"1PEApqz3PV9ji3TzTv4XPSAizKXL1ZvuVn","bet_X":"1J9Bv7iUb9pgVCNbqK4v8z2zEVNhh6NGut","bet_2":"14zKYxjBnkomf9MMgJjYadZ2tnzqZcixJo","host_h":"2a46acec","guest_h":"f044e675"},{"hour":"16:00","host":"Górnik Łęczna","guest":"Lech Poznań","bet_1":"1HbcUFoWN5YoY7iKgAuKG9rU315MtyeNpk","bet_X":"143yzxvXSQRmgGogpzXSkRy814ybphvuea","bet_2":"18oYhLNy7g67ETTHjFebsXfyea3ysjB8My","host_h":"a12ae773","guest_h":"1ac998ca"},{"hour":"16:00","host":"Górnik Zabrze","guest":"GKS Bełchatów","bet_1":"1JScGrscXVNte4Lqe1FKwQaT4yn9z3TH8r","bet_X":"15aGg4aQ2vHUfEVTCoLtgyWJcDuYKdQh1u","bet_2":"1PmGyLTiLMx161ua4Y17uZyc1chfeB54BH","host_h":"f4636514","guest_h":"e48ee6d9"},{"hour":"16:00","host":"Jagiellonia Białystok","guest":"Piast Gliwice","bet_1":"1HF8hSCA2Nwz4Sf3eoeajJK1tzddu4sYy","bet_X":"12Y2dKVfL99t1ptXSLTpWDEBtskTfZaSau","bet_2":"1NBnwuVfSMcc2BxZXDAzyPy5pa2PcHvKMz","host_h":"3756286a","guest_h":"aab1adf"},{"hour":"16:00","host":"Korona Kielce","guest":"Ruch Chorzów","bet_1":"1JULAnKt5nJxsJYByqTsnPTLvmXwdefTzd","bet_X":"1LC7ahe9HgKszxDzUmxqStgNL9KYpPP6FU","bet_2":"1AKFBuG91cSYAhDxLvX8x3oncx5QTMwEEE","host_h":"1645d4c3","guest_h":"134a646e"},{"hour":"16:00","host":"Legia Warszawa","guest":"Zawisza Bydgoszcz","bet_1":"19ANRBm11z9RNsaZw2c4FJxF8ewMTj5oid","bet_X":"1613yv8YCxWYu3uV1MuYm3XHFELxzfMNiv","bet_2":"1JF4bifYavTr9ffxee9zR9Ah9uqFMYXxk1","host_h":"30ee1a9","guest_h":"28522c84"},{"hour":"16:00","host":"Podbeskidzie Bielsko-Biała","guest":"Wisła Kraków","bet_1":"1Aazgt2bAi3pqJR5R3JPuUWgd8YrFMe7Eo","bet_X":"1PdDLyTvRx7DVNw8No6WdhfUPcUoXwm5vD","bet_2":"1PiTSUaahMiQvTNmdmoc9eawobXQ4HaKLc","host_h":"49b1e1af","guest_h":"9f1b812c"},{"hour":"16:00","host":"Śląsk Wrocław","guest":"Lechia Gdańsk","bet_1":"183w1ugcwirpY1kEcNp9L6JRGCQM1AQxkD","bet_X":"1Q6xcxRkHFsrrHMn4KpkjnFVBxHaxpYqtZ","bet_2":"17TKWpi3Le5ZcRDvbWLzm4gg5363McTNHJ","host_h":"d087b9e7","guest_h":"e56d80e4"}]],["2015-04-25",[{"hour":"16:00","host":"GKS Bełchatów","guest":"Jagiellonia Białystok","bet_1":"1JeLUfabxN5R2ei7oiEbHrfeKib1tdguNW","bet_X":"1QHUBz24hbzT7VbcDejkxrNz5qqixHtUE7","bet_2":"17tXKFWniBRzBbyvwEepnjmMRQdLiCoiYq","host_h":"e48ee6d9","guest_h":"3756286a"},{"hour":"16:00","host":"Lech Poznań","guest":"Śląsk Wrocław","bet_1":"1LRZ4NCTWRft763vkc643SABnk2S8XG19j","bet_X":"1Ks27hs8EkfXYs5RNwrsvQeLcg8W7xA9A9","bet_2":"1CUDqn4S8zWqHyvYURRo7ZFnjVN4kt5Pxe","host_h":"1ac998ca","guest_h":"d087b9e7"},{"hour":"16:00","host":"Lechia Gdańsk","guest":"Górnik Łęczna","bet_1":"1DrDQPWjh3uWo4tsScM39xjzpFV3xkVfTT","bet_X":"1PowosLL1MuSYrjP7iQaJ7SS7MY9Phv8fX","bet_2":"18Tcn4fTHFLoe9T93AFgDMcxqaAZEftZEH","host_h":"e56d80e4","guest_h":"a12ae773"},{"hour":"16:00","host":"Piast Gliwice","guest":"Podbeskidzie Bielsko-Biała","bet_1":"1M7DKEZ3sraU1UJxDe12jo41My6Ziet6Bt","bet_X":"1PmnEgb6Mb164pf4WEWxeoAF2JJL6yo7CL","bet_2":"176oyDrofYseaKkxgAmAjYREos5MBxFTNr","host_h":"aab1adf","guest_h":"49b1e1af"},{"hour":"16:00","host":"Pogoń Szczecin","guest":"Górnik Zabrze","bet_1":"1G2LH59GPtJkRbJo3yrUZzYLA2Tnf91BsY","bet_X":"13LFQehmGSukB9xwnJ9HXJgxZxHdFqL1fH","bet_2":"1KwE3xh7kUZEGcDSsWjGv3PQtWv73rmDCD","host_h":"f044e675","guest_h":"f4636514"},{"hour":"16:00","host":"Ruch Chorzów","guest":"Legia Warszawa","bet_1":"19ZgYJJReoE3xRUS85RpYBgXBBDqSsk3iG","bet_X":"15bg1aqwDnkpmj4JNNa2PcZASRU4dFbs8j","bet_2":"1ABrB1R9ns8SvZiHMu8onYTntxFGS3fAUX","host_h":"134a646e","guest_h":"30ee1a9"},{"hour":"16:00","host":"Wisła Kraków","guest":"Korona Kielce","bet_1":"14cf1X4joF3rhj1aZpyumSZFXodz4SzfV8","bet_X":"1E9YXbGQz9YRc6gBs1yuRjpt2SZe8MiZPf","bet_2":"17dpxQQc3q3gips9THZrJ3s8PowVFXeGr2","host_h":"9f1b812c","guest_h":"1645d4c3"},{"hour":"16:00","host":"Zawisza Bydgoszcz","guest":"Cracovia Kraków","bet_1":"13WbphwQo7Pg462hfFupuobeuQ8j2Bo88p","bet_X":"1KYutn8BRugz4eFAkhoeexLCZ2rYJgJt9E","bet_2":"17NLzLaSeYXh9fQgVaYWhdWrjfDJbhr4tF","host_h":"28522c84","guest_h":"2a46acec"}]],["2015-04-29",[{"hour":"16:00","host":"Cracovia Kraków","guest":"GKS Bełchatów","bet_1":"1P7qNHkWTDbcdFMGnxSZcyztoqu5qTXoTz","bet_X":"16ToKv7hGM8Np53dx43LkNSjZTZdYqKs4N","bet_2":"12Gfu2deECVN7DqYrMBTfYjskqXEQdEYPr","host_h":"2a46acec","guest_h":"e48ee6d9"},{"hour":"16:00","host":"Górnik Łęczna","guest":"Piast Gliwice","bet_1":"1FN2b8Y7gRP9nTCYDHCMc6dizHHYFaAdnE","bet_X":"178R2D1hehh3cXSpF31eQ3bzC8JDbiNK4j","bet_2":"1P9aokrWS7qdFsMR8kZ3Cow28zTpERCFrr","host_h":"a12ae773","guest_h":"aab1adf"},{"hour":"16:00","host":"Górnik Zabrze","guest":"Zawisza Bydgoszcz","bet_1":"1FDKSu64EV3uaH96fsq9Qqt6b65mNSQHJT","bet_X":"1G7VxXAwbpqgqt8m3k7eckR4gPuZDW9Twe","bet_2":"1Tm8nG41frmLrHqSWbZCc5FyazXWQ6bmM","host_h":"f4636514","guest_h":"28522c84"},{"hour":"16:00","host":"Jagiellonia Białystok","guest":"Ruch Chorzów","bet_1":"19tvEYY5Lq5u4J5Qvp2RTAR4SXcXZMbDeK","bet_X":"16KZrU78oCS7cQuu3BCwd7wSwpiengspYy","bet_2":"1PxbqViy9y61urqBsVKxmAWry6XFdarv5S","host_h":"3756286a","guest_h":"134a646e"},{"hour":"16:00","host":"Korona Kielce","guest":"Lechia Gdańsk","bet_1":"1rKYrmQZLCmcYhfgozFcGTRcD2cMooNjP","bet_X":"1DJSCYdD47w4EpzAGbzCyoHJuRx9KTnJP5","bet_2":"13tDDgHU489a2Vd2maySG2wAewUWpbrACp","host_h":"1645d4c3","guest_h":"e56d80e4"},{"hour":"16:00","host":"Legia Warszawa","guest":"Pogoń Szczecin","bet_1":"1BfHcKrHgKWRjfdZLWQngB4VxKU7kF2sSh","bet_X":"1KRXrs299sw8rBQACzW7F9gqLYniBKgZr8","bet_2":"1M9LRcnRxeV27nS6HT8BWtCAwjBquNmgaF","host_h":"30ee1a9","guest_h":"f044e675"},{"hour":"16:00","host":"Podbeskidzie Bielsko-Biała","guest":"Lech Poznań","bet_1":"14vroxaobNiYibcFmqUrqjmxMLATHZ5zRq","bet_X":"1FhKsvVuE6LSRM9yfjiZrxTAH656DWAixL","bet_2":"1G6cjFcCpHxmwU2Wga2meid3FrSw6AzonS","host_h":"49b1e1af","guest_h":"1ac998ca"},{"hour":"16:00","host":"Śląsk Wrocław","guest":"Wisła Kraków","bet_1":"1MLpcsUXCjfmPMDr5wDn1ky6S4GVHGgdcF","bet_X":"1NthfjJYRCVzTozNL1Ves8VTaPC7VnQrWt","bet_2":"1PLmEGyfS7EnVyxBAH3BZ6QNKEgVwnPKQ2","host_h":"d087b9e7","guest_h":"9f1b812c"}]]]
+var data = [
+  [
+    "2015-02-27",
+    [
+      {
+        "hour": "17:00",
+        "host": "Ruch Chorzów",
+        "guest": "Lechia Gdańsk",
+        "bet_1": "14g4dq9E1vFFTseihyNbLZh7j7jLL3vKQR",
+        "bet_X": "1LwZWGRWosCACG9rpLLaSeBGTbQZPf1cUk",
+        "bet_2": "1FqUGRnTSqqJZkBWNRMGi1KSBLwaWTHMCM",
+        "host_h": "134a646e",
+        "guest_h": "e56d80e4"
+      },
+      {
+        "hour": "19:30",
+        "host": "Cracovia Kraków",
+        "guest": "Lech Poznań",
+        "bet_1": "1EQsC1s48oeSDTQPS8AsLgKpjgzn22psSi",
+        "bet_X": "1GjzfHbFoYA24f6XsJ5mtohrbzCvJBEvFD",
+        "bet_2": "1LNpShLqBqwFsRyvkD2xdYSLbf8EttDsVT",
+        "host_h": "2a46acec",
+        "guest_h": "1ac998ca"
+      }
+    ]
+  ],
+  [
+    "2015-02-28",
+    [
+      {
+        "hour": "14:30",
+        "host": "GKS Bełchatów",
+        "guest": "Wisła Kraków",
+        "bet_1": "1LmULFksqPVAQpM61wHoMpzoNuo58RGnbq",
+        "bet_X": "1P948vLVPT64YCsRFHSsxB5wJjfya5Zuaj",
+        "bet_2": "1PTQUyiJ5TSasdJ1s5AP41rBD3trWvDPUK",
+        "host_h": "e48ee6d9",
+        "guest_h": "9f1b812c"
+      },
+      {
+        "hour": "14:30",
+        "host": "Zawisza Bydgoszcz",
+        "guest": "Piast Gliwice",
+        "bet_1": "178K8LFHJKteKa517CMBK7vd8q7sxvhcaV",
+        "bet_X": "13ccuAwjz2ezwf8z11f6kQgohizaoDFt2N",
+        "bet_2": "1LEFQ3ZNNpZYiUw6UA7yLNdsvjwW7WNygL",
+        "host_h": "28522c84",
+        "guest_h": "aab1adf"
+      },
+      {
+        "hour": "17:00",
+        "host": "Górnik Zabrze",
+        "guest": "Śląsk Wrocław",
+        "bet_1": "12gXvLvHrUYW5hbqnBRjmtkgLPrJRnYsNb",
+        "bet_X": "1NoVXYCAjmi5EcMY9yoYxvsqhCTBbDCGL5",
+        "bet_2": "16vcygyhqAsS1HTYBNVwYxnJNP78fGj5s3",
+        "host_h": "f4636514",
+        "guest_h": "d087b9e7"
+      }
+    ]
+  ],
+  [
+    "2015-03-01",
+    [
+      {
+        "hour": "14:30",
+        "host": "Jagiellonia Białystok",
+        "guest": "Korona Kielce",
+        "bet_1": "1pjTDLnRmn21VGfRMzaUAhWrBEcu9yEv7",
+        "bet_X": "157tazBxPsyyLhvZVfr86qyAu82m5sFbcX",
+        "bet_2": "15nv9GMYXugjz3Vs6AyQ98kdcPdo8TmhXz",
+        "host_h": "3756286a",
+        "guest_h": "1645d4c3"
+      },
+      {
+        "hour": "17:00",
+        "host": "Legia Warszawa",
+        "guest": "Podbeskidzie Bielsko-Biała",
+        "bet_1": "15Hb1FTnZcjesyUyx427ynZYqHpBNSB5xe",
+        "bet_X": "1MHgvhzuWc3hnSk1V3uhNsZZn1AFcUac9C",
+        "bet_2": "13AMTfAkJdtjAVvPqunijrfWPES1cubnE8",
+        "host_h": "30ee1a9",
+        "guest_h": "49b1e1af"
+      }
+    ]
+  ],
+  [
+    "2015-03-02",
+    [
+      {
+        "hour": "17:00",
+        "host": "Pogoń Szczecin",
+        "guest": "Górnik Łęczna",
+        "bet_1": "1Jo8jLMQcxPZcg2aVQh9czZ8a1uKeLiAzB",
+        "bet_X": "15SRBp8jytkHCMnr8z517yn2r8zmHygJ1N",
+        "bet_2": "1DehP9WrCPEtbKrJnTTyfwEGA1KRWQ7cWq",
+        "host_h": "f044e675",
+        "guest_h": "a12ae773"
+      }
+    ]
+  ],
+  [
+    "2015-03-06",
+    [
+      {
+        "hour": "17:00",
+        "host": "Ruch Chorzów",
+        "guest": "Pogoń Szczecin",
+        "bet_1": "1AJW2YrSgMPWnGHicbc4BYd31ZyBKz43uV",
+        "bet_X": "1P1iK5NxWuK96ZQo5qcxnn3Xxm4YMrw3M9",
+        "bet_2": "1MASsyJrW76L3Q8xWDHaFdLWpmTwxTX5y9",
+        "host_h": "134a646e",
+        "guest_h": "f044e675"
+      },
+      {
+        "hour": "19:30",
+        "host": "Lech Poznań",
+        "guest": "Jagiellonia Białystok",
+        "bet_1": "17odob786oujwNQsNAqkZyqf8Vab3KtjYY",
+        "bet_X": "1Dj34zAFZUtx8RmKDWZfV9iqUA58wKkAdv",
+        "bet_2": "18xqvQCwaExgBSU7EtPCwKXX9jKgeGu9cZ",
+        "host_h": "1ac998ca",
+        "guest_h": "3756286a"
+      }
+    ]
+  ],
+  [
+    "2015-03-07",
+    [
+      {
+        "hour": "14:30",
+        "host": "Piast Gliwice",
+        "guest": "Górnik Zabrze",
+        "bet_1": "1GrDs7w37A792nxbbKQ2wuNE8QGbTe6aud",
+        "bet_X": "1DzJuF5HYkfqAu7foWafYQU1AjF3F62GRN",
+        "bet_2": "16vY1jvJ72JAs8fEomqn5qsDzaX2F3fQFQ",
+        "host_h": "aab1adf",
+        "guest_h": "f4636514"
+      },
+      {
+        "hour": "14:30",
+        "host": "Wisła Kraków",
+        "guest": "Zawisza Bydgoszcz",
+        "bet_1": "1Er7kdNDVdhxML1GDLsmcxAB7bNw2pNsxM",
+        "bet_X": "17vUeg1VAR7L1bdhaaznewsmZFunfcxhJZ",
+        "bet_2": "1Hqb26eefDBynBRuXa7zvb9kCqT9itC4oc",
+        "host_h": "9f1b812c",
+        "guest_h": "28522c84"
+      },
+      {
+        "hour": "17:00",
+        "host": "Lechia Gdańsk",
+        "guest": "GKS Bełchatów",
+        "bet_1": "1P78mjztpREAfceyUyedkSMCup3kGpUQQF",
+        "bet_X": "1JintfvVQcRb19Wdjs3PFZUb4fQd6ha716",
+        "bet_2": "12nHJsSeZoYLxRdfDe7XxbXHpak75wMKdB",
+        "host_h": "e56d80e4",
+        "guest_h": "e48ee6d9"
+      }
+    ]
+  ],
+  [
+    "2015-03-08",
+    [
+      {
+        "hour": "14:30",
+        "host": "Podbeskidzie Bielsko-Biała",
+        "guest": "Korona Kielce",
+        "bet_1": "15c6gdvyMveiA6AsUKk8QoMSXp8Lkw9u5x",
+        "bet_X": "1S3rdVd9JbzvtTw23QksqrLcCg2aJynS2",
+        "bet_2": "19fbbLkckoCBQL82PTn1hTiZkc8MsgDJQR",
+        "host_h": "49b1e1af",
+        "guest_h": "1645d4c3"
+      },
+      {
+        "hour": "17:00",
+        "host": "Śląsk Wrocław",
+        "guest": "Legia Warszawa",
+        "bet_1": "1MJ36mNL327Z6ZjRXgs3QWz3hwBZzMTz7c",
+        "bet_X": "1Q9Q4J2M5ZJnyLeXyRdJCNHK7AobdgaUNe",
+        "bet_2": "1CXTCm27uBnp8fcHraLiU9tEjnucoZcutG",
+        "host_h": "d087b9e7",
+        "guest_h": "30ee1a9"
+      }
+    ]
+  ],
+  [
+    "2015-03-09",
+    [
+      {
+        "hour": "17:00",
+        "host": "Górnik Łęczna",
+        "guest": "Cracovia Kraków",
+        "bet_1": "1HhgX6tqSvH6GNxac3r5nq5fDAKW5LAuuH",
+        "bet_X": "1PKB8PDwKYDJDgtbobuNRZTDB5mXLxmZeq",
+        "bet_2": "12LnwRkmcMZAU72qT8AssVP6xMXgUFrr3x",
+        "host_h": "a12ae773",
+        "guest_h": "2a46acec"
+      }
+    ]
+  ],
+  [
+    "2015-03-14",
+    [
+      {
+        "hour": "17:00",
+        "host": "Cracovia Kraków",
+        "guest": "Piast Gliwice",
+        "bet_1": "1JAcRJesRnwRHuWqRKQrvZEceCGXFVmpG4",
+        "bet_X": "1NB6hHsGG8EX6KWqhMCzNkZzkGS1d9wbXN",
+        "bet_2": "12sy4frduAKuENgyPJsXpQQMCR6mk8hGJX",
+        "host_h": "2a46acec",
+        "guest_h": "aab1adf"
+      },
+      {
+        "hour": "17:00",
+        "host": "GKS Bełchatów",
+        "guest": "Ruch Chorzów",
+        "bet_1": "1FMBEfgFAZud4D6r83e78dQumRQ6LdUToQ",
+        "bet_X": "14BPQVFkiAtuSJmCgpMhnLrqmzWV25ptkE",
+        "bet_2": "14fWy6MB9pyXb5YXd5wkWqa2cbxuVJwF7b",
+        "host_h": "e48ee6d9",
+        "guest_h": "134a646e"
+      },
+      {
+        "hour": "17:00",
+        "host": "Górnik Zabrze",
+        "guest": "Podbeskidzie Bielsko-Biała",
+        "bet_1": "1PFs8xEDah1YUGZ5hehdwbgunCpgirEbQ8",
+        "bet_X": "155wTiH9FhFnzQ3eyF39y8eN9Zwg87SFaQ",
+        "bet_2": "1CXaknAGVWGsXNANQ8Up2576Q4YCtKyBJo",
+        "host_h": "f4636514",
+        "guest_h": "49b1e1af"
+      },
+      {
+        "hour": "17:00",
+        "host": "Jagiellonia Białystok",
+        "guest": "Górnik Łęczna",
+        "bet_1": "1DMeUHN5fyWRhpvebS3SckAfq5SgH5oXn",
+        "bet_X": "1CbxY8X2B3jRLfeh25BasGHvAYSvXUDRax",
+        "bet_2": "1GSWUZAtRVzwDsGhDsXsXpqabdP3hXCrgV",
+        "host_h": "3756286a",
+        "guest_h": "a12ae773"
+      },
+      {
+        "hour": "17:00",
+        "host": "Korona Kielce",
+        "guest": "Śląsk Wrocław",
+        "bet_1": "1ByNb76euJyjmoy7zjgf17ReF3uLSjPd5i",
+        "bet_X": "1EB43nTjxrsRWsQAc6LHjqH3oxdFe5qnTk",
+        "bet_2": "1EheALtWaTzsqZBxZ9b1sivg51rdimXoaD",
+        "host_h": "1645d4c3",
+        "guest_h": "d087b9e7"
+      },
+      {
+        "hour": "17:00",
+        "host": "Legia Warszawa",
+        "guest": "Wisła Kraków",
+        "bet_1": "12R6TStLbakju7MuGwcmhHkj68Ck8fxjSZ",
+        "bet_X": "1AX4CeueAVey4ATGVUdfB1CwRsVfuWdzP4",
+        "bet_2": "14rAYXQY6UZg2u14gkv2fgAeTjHAVarqEh",
+        "host_h": "30ee1a9",
+        "guest_h": "9f1b812c"
+      },
+      {
+        "hour": "17:00",
+        "host": "Pogoń Szczecin",
+        "guest": "Lechia Gdańsk",
+        "bet_1": "15sLSYEdeEwEgmds7X5vyktehdHFVimST7",
+        "bet_X": "1PQyFUjb68prNKw4izLWuReUtS2RdMmWe9",
+        "bet_2": "15GeMtwMPkFo26mkF3TfrQznQKEhjGugAz",
+        "host_h": "f044e675",
+        "guest_h": "e56d80e4"
+      },
+      {
+        "hour": "17:00",
+        "host": "Zawisza Bydgoszcz",
+        "guest": "Lech Poznań",
+        "bet_1": "18NVND7GLf6JcgwLgxV7A8uaQqbsxqjHM4",
+        "bet_X": "1BwPDX3qRc9VRCMKSxRtLCbcLqdEazoqcf",
+        "bet_2": "1GCMNA5tQxdQvSN5G6FaMCQjqMXu5363vi",
+        "host_h": "28522c84",
+        "guest_h": "1ac998ca"
+      }
+    ]
+  ],
+  [
+    "2015-03-21",
+    [
+      {
+        "hour": "17:00",
+        "host": "Górnik Łęczna",
+        "guest": "Śląsk Wrocław",
+        "bet_1": "1FdJiH36i1jRmDdTdAZt3byjC8mHaoyfSu",
+        "bet_X": "1GPZQ92c4fjWVXpdXSYbyAqxd9wRk6y2t3",
+        "bet_2": "1ECUgAewJjwVuH3SASxCzyNcadKxdm9hEx",
+        "host_h": "a12ae773",
+        "guest_h": "d087b9e7"
+      },
+      {
+        "hour": "17:00",
+        "host": "Lech Poznań",
+        "guest": "Legia Warszawa",
+        "bet_1": "1682kGfd3AUBWFpKV5syL4SoeyWEWkEV19",
+        "bet_X": "12hcgeExwWcG1acDJVHfBo73bC7h5f5S37",
+        "bet_2": "1CPGdX2qrQBAGWe1GtthGJPCfWS74oCaSg",
+        "host_h": "1ac998ca",
+        "guest_h": "30ee1a9"
+      },
+      {
+        "hour": "17:00",
+        "host": "Lechia Gdańsk",
+        "guest": "Górnik Zabrze",
+        "bet_1": "1NuqRNJKwUCJh3cG6drccH6sLZpEpiewAf",
+        "bet_X": "1MneTC8SLVpL8byairEfj529yHGEMu3ofw",
+        "bet_2": "15mFBDMwYUnaUFoTzJYiWyS7REks5mLuyf",
+        "host_h": "e56d80e4",
+        "guest_h": "f4636514"
+      },
+      {
+        "hour": "17:00",
+        "host": "Piast Gliwice",
+        "guest": "Korona Kielce",
+        "bet_1": "1CXtZaHuBPXGJ3DdTFkKaQ4CMWBYDFjx2G",
+        "bet_X": "1G3MXsZmBW4oEVF9tnMfY9jGvmAqiPvNNZ",
+        "bet_2": "19vXsTqwNCESB5qoeCU4pbRqhFmDw9kDG6",
+        "host_h": "aab1adf",
+        "guest_h": "1645d4c3"
+      },
+      {
+        "hour": "17:00",
+        "host": "Podbeskidzie Bielsko-Biała",
+        "guest": "Jagiellonia Białystok",
+        "bet_1": "1ChJdfE3KXQMfVD5o418qHteVTeSiXARGc",
+        "bet_X": "1CudM6LXrWd4JrvkjztziAui9MNaTSRDZM",
+        "bet_2": "1KbvNhJdbK2uw2BNDBbXxN1Usx6dFKbLdg",
+        "host_h": "49b1e1af",
+        "guest_h": "3756286a"
+      },
+      {
+        "hour": "17:00",
+        "host": "Pogoń Szczecin",
+        "guest": "GKS Bełchatów",
+        "bet_1": "1L17pYTai6k2zdM99Ah7tkXGi9f9FptRo8",
+        "bet_X": "1gwf49mMLDQN1kTCiRSXFvZF9SoTR9euh",
+        "bet_2": "1NpVe8WgKFwUbreZxBSpmuY3zDY3kU7Ksy",
+        "host_h": "f044e675",
+        "guest_h": "e48ee6d9"
+      },
+      {
+        "hour": "17:00",
+        "host": "Ruch Chorzów",
+        "guest": "Zawisza Bydgoszcz",
+        "bet_1": "1HszbX7sBDJ7LezSiKod9SW1GPDnZHjJRq",
+        "bet_X": "1RV2W1VPeK9eyZ5WKFC6ofSc3RCYS5AZS",
+        "bet_2": "1KrSc72ajmJrAy8v7HWz1tJrcuawtYgkz7",
+        "host_h": "134a646e",
+        "guest_h": "28522c84"
+      },
+      {
+        "hour": "17:00",
+        "host": "Wisła Kraków",
+        "guest": "Cracovia Kraków",
+        "bet_1": "1HT42CApZfiwkjRFV4WssZ58svsm1GqaDM",
+        "bet_X": "19euAwXdn1xAhoqK5ibRPHzbMRMHPBtDn4",
+        "bet_2": "1GLQdwWYQh6CeKX1rrc4fLRJtcymhFa88W",
+        "host_h": "9f1b812c",
+        "guest_h": "2a46acec"
+      }
+    ]
+  ],
+  [
+    "2015-04-04",
+    [
+      {
+        "hour": "16:00",
+        "host": "Cracovia Kraków",
+        "guest": "Lechia Gdańsk",
+        "bet_1": "13FUy62MfzBmBE6pNmYLZmExyRxKR92SgZ",
+        "bet_X": "1LxY1yMoY1nQeFziGy8Sd1QzrrVTbNZF4T",
+        "bet_2": "14ftDBWEBC5u7w2dhsCSkgtZ7bJA5HSguL",
+        "host_h": "2a46acec",
+        "guest_h": "e56d80e4"
+      },
+      {
+        "hour": "16:00",
+        "host": "GKS Bełchatów",
+        "guest": "Lech Poznań",
+        "bet_1": "15vjrbpUMF5mMH8hLSLtYfJV83V8wziGQP",
+        "bet_X": "1PydBWr2TKjhzSJqdb2niC9ZUs3Mi8oZhz",
+        "bet_2": "1BQcwezu1dxtAG76H3SPuzFZZh9B7a8mHy",
+        "host_h": "e48ee6d9",
+        "guest_h": "1ac998ca"
+      },
+      {
+        "hour": "16:00",
+        "host": "Górnik Zabrze",
+        "guest": "Ruch Chorzów",
+        "bet_1": "1Dj7GPEyJ4AbzNoZQxNLf2eaHwnoUpzyqk",
+        "bet_X": "17VdnYnsx2pe72zMyhrqReMXNrzPeUNTKC",
+        "bet_2": "1MEbf9Ask217RV73geS1B1Zohv7L4Ub96f",
+        "host_h": "f4636514",
+        "guest_h": "134a646e"
+      },
+      {
+        "hour": "16:00",
+        "host": "Jagiellonia Białystok",
+        "guest": "Wisła Kraków",
+        "bet_1": "1HVfU6SckR22p7dsMPDWdQtPvds6kCKg9Y",
+        "bet_X": "1E6dDFZoutHPhc6wVAhqaPPauZtUiAHM4n",
+        "bet_2": "1FnntiPq1Mm8kbS9UpzzMyfCH2oo1NeSxt",
+        "host_h": "3756286a",
+        "guest_h": "9f1b812c"
+      },
+      {
+        "hour": "16:00",
+        "host": "Korona Kielce",
+        "guest": "Górnik Łęczna",
+        "bet_1": "1CkPMzvMRbGXYvcFXiPxSwGzvTxQoS91Zo",
+        "bet_X": "1L6Jkb3iq2WakDabLKp6jfdiKRuCfUPW1Y",
+        "bet_2": "1H5mZ9Wk9D3aS2MYdYmXq8pdK3G1AJSp17",
+        "host_h": "1645d4c3",
+        "guest_h": "a12ae773"
+      },
+      {
+        "hour": "16:00",
+        "host": "Legia Warszawa",
+        "guest": "Piast Gliwice",
+        "bet_1": "1BaGq7LKQR7UXN1eDdfGYaQczRFeongo8U",
+        "bet_X": "1Lmv3DSqSRNxLTpdut6ANsDNDUfW3xHcHM",
+        "bet_2": "1HF4UNggPgfcWmKD4HiueDMxsmbsxLgvG1",
+        "host_h": "30ee1a9",
+        "guest_h": "aab1adf"
+      },
+      {
+        "hour": "16:00",
+        "host": "Śląsk Wrocław",
+        "guest": "Podbeskidzie Bielsko-Biała",
+        "bet_1": "1CCTU4EHazRDcg7zGdPqrxFUyFNMudjZAo",
+        "bet_X": "1P6PMVRbCRWaZiqpMbq4DTmN2TBTk3YpQr",
+        "bet_2": "1FUFX4jj1gSbJQLybcZErN5ZCErFkphdGD",
+        "host_h": "d087b9e7",
+        "guest_h": "49b1e1af"
+      },
+      {
+        "hour": "16:00",
+        "host": "Zawisza Bydgoszcz",
+        "guest": "Pogoń Szczecin",
+        "bet_1": "1Hp8iCo2iHCnGVobBQRc3C7DG8jQ69i7qm",
+        "bet_X": "18x9JpZwN8F64dSd4VHrPbccoTpS8bqPH",
+        "bet_2": "1QGVvZJqMNystabb5s9SBDk7BNqfB7FnzS",
+        "host_h": "28522c84",
+        "guest_h": "f044e675"
+      }
+    ]
+  ],
+  [
+    "2015-04-11",
+    [
+      {
+        "hour": "16:00",
+        "host": "GKS Bełchatów",
+        "guest": "Zawisza Bydgoszcz",
+        "bet_1": "1Kms78pLiREVKGyy7VDW3yp4YwFDxFG5SG",
+        "bet_X": "1AMh9J77bW4Jzbff7MCRZ1hMRMSXxziFob",
+        "bet_2": "1msWZesADyJGY94zfJS8A7hUSVNHvsmj3",
+        "host_h": "e48ee6d9",
+        "guest_h": "28522c84"
+      },
+      {
+        "hour": "16:00",
+        "host": "Górnik Łęczna",
+        "guest": "Podbeskidzie Bielsko-Biała",
+        "bet_1": "1H9XtLrzAdCcRqYzYGsWGSdRN9zhs3Bu7z",
+        "bet_X": "1e46Ub3NPEhXtKxxujFgBabqbRKgjSxYo",
+        "bet_2": "11fPx3im3VyaSgTNEVTVnxDSBF1GV3Y7J",
+        "host_h": "a12ae773",
+        "guest_h": "49b1e1af"
+      },
+      {
+        "hour": "16:00",
+        "host": "Lech Poznań",
+        "guest": "Korona Kielce",
+        "bet_1": "1GumMC7tkURMv85dQGgm3CV14d5i58NsCK",
+        "bet_X": "12qcwNs7A5Lv1Fj1Mw96Vv7mznMncd1VY4",
+        "bet_2": "1MbEW4aihzh6AD6q6evS2ttVLbo2GceHe2",
+        "host_h": "1ac998ca",
+        "guest_h": "1645d4c3"
+      },
+      {
+        "hour": "16:00",
+        "host": "Lechia Gdańsk",
+        "guest": "Legia Warszawa",
+        "bet_1": "1GTukNDe1DWCXiso2GY7yqYiptWgtCFGJ5",
+        "bet_X": "1LVNP5vvfyLmZb5QxkAyYEVCqaTZFZwLXV",
+        "bet_2": "1E33DScmoxRryj3PHLtSpDVYDZaFFjuMk",
+        "host_h": "e56d80e4",
+        "guest_h": "30ee1a9"
+      },
+      {
+        "hour": "16:00",
+        "host": "Piast Gliwice",
+        "guest": "Śląsk Wrocław",
+        "bet_1": "17FiyLqtDYEuQfhKNfd2o8AT9eTEvxjcjn",
+        "bet_X": "1KGL7We4smXtoMuCWy8NqQH4MSND5gfUWH",
+        "bet_2": "15A3EkH95VDSjLc7Ei48ftg1zwRi6DVCuc",
+        "host_h": "aab1adf",
+        "guest_h": "d087b9e7"
+      },
+      {
+        "hour": "16:00",
+        "host": "Pogoń Szczecin",
+        "guest": "Jagiellonia Białystok",
+        "bet_1": "1VhoMNsfE7uhbuLXgHfxZLL1mcDQjViHr",
+        "bet_X": "1HdDv5nQrYo1ntZnpSnY4Zs7WDpmnUm3zb",
+        "bet_2": "1D2fUikAPwLPvSFS6n1Yb4mNNywM9aJoCH",
+        "host_h": "f044e675",
+        "guest_h": "3756286a"
+      },
+      {
+        "hour": "16:00",
+        "host": "Ruch Chorzów",
+        "guest": "Cracovia Kraków",
+        "bet_1": "126xqy72xeukEzGVHBydnaGz5SuDJoz6Hw",
+        "bet_X": "1Kcz8s5qM9mhX6DkwBZVYUXTiUkdJM1azZ",
+        "bet_2": "1JDejLurEe6p8amo6HBS59bhz3ayDLrB7r",
+        "host_h": "134a646e",
+        "guest_h": "2a46acec"
+      },
+      {
+        "hour": "16:00",
+        "host": "Wisła Kraków",
+        "guest": "Górnik Zabrze",
+        "bet_1": "1BUr89YeLmSz9NKDrTrW89qaCe5gHnva8",
+        "bet_X": "15itRzxveGRDVTpcyR2TVgfWUTF8d3ezke",
+        "bet_2": "1AJS1nGLy5EghmHzFjUpC8P1hJPWbo5FJB",
+        "host_h": "9f1b812c",
+        "guest_h": "f4636514"
+      }
+    ]
+  ],
+  [
+    "2015-04-18",
+    [
+      {
+        "hour": "16:00",
+        "host": "Cracovia Kraków",
+        "guest": "Pogoń Szczecin",
+        "bet_1": "1PEApqz3PV9ji3TzTv4XPSAizKXL1ZvuVn",
+        "bet_X": "1J9Bv7iUb9pgVCNbqK4v8z2zEVNhh6NGut",
+        "bet_2": "14zKYxjBnkomf9MMgJjYadZ2tnzqZcixJo",
+        "host_h": "2a46acec",
+        "guest_h": "f044e675"
+      },
+      {
+        "hour": "16:00",
+        "host": "Górnik Łęczna",
+        "guest": "Lech Poznań",
+        "bet_1": "1HbcUFoWN5YoY7iKgAuKG9rU315MtyeNpk",
+        "bet_X": "143yzxvXSQRmgGogpzXSkRy814ybphvuea",
+        "bet_2": "18oYhLNy7g67ETTHjFebsXfyea3ysjB8My",
+        "host_h": "a12ae773",
+        "guest_h": "1ac998ca"
+      },
+      {
+        "hour": "16:00",
+        "host": "Górnik Zabrze",
+        "guest": "GKS Bełchatów",
+        "bet_1": "1JScGrscXVNte4Lqe1FKwQaT4yn9z3TH8r",
+        "bet_X": "15aGg4aQ2vHUfEVTCoLtgyWJcDuYKdQh1u",
+        "bet_2": "1PmGyLTiLMx161ua4Y17uZyc1chfeB54BH",
+        "host_h": "f4636514",
+        "guest_h": "e48ee6d9"
+      },
+      {
+        "hour": "16:00",
+        "host": "Jagiellonia Białystok",
+        "guest": "Piast Gliwice",
+        "bet_1": "1HF8hSCA2Nwz4Sf3eoeajJK1tzddu4sYy",
+        "bet_X": "12Y2dKVfL99t1ptXSLTpWDEBtskTfZaSau",
+        "bet_2": "1NBnwuVfSMcc2BxZXDAzyPy5pa2PcHvKMz",
+        "host_h": "3756286a",
+        "guest_h": "aab1adf"
+      },
+      {
+        "hour": "16:00",
+        "host": "Korona Kielce",
+        "guest": "Ruch Chorzów",
+        "bet_1": "1JULAnKt5nJxsJYByqTsnPTLvmXwdefTzd",
+        "bet_X": "1LC7ahe9HgKszxDzUmxqStgNL9KYpPP6FU",
+        "bet_2": "1AKFBuG91cSYAhDxLvX8x3oncx5QTMwEEE",
+        "host_h": "1645d4c3",
+        "guest_h": "134a646e"
+      },
+      {
+        "hour": "16:00",
+        "host": "Legia Warszawa",
+        "guest": "Zawisza Bydgoszcz",
+        "bet_1": "19ANRBm11z9RNsaZw2c4FJxF8ewMTj5oid",
+        "bet_X": "1613yv8YCxWYu3uV1MuYm3XHFELxzfMNiv",
+        "bet_2": "1JF4bifYavTr9ffxee9zR9Ah9uqFMYXxk1",
+        "host_h": "30ee1a9",
+        "guest_h": "28522c84"
+      },
+      {
+        "hour": "16:00",
+        "host": "Podbeskidzie Bielsko-Biała",
+        "guest": "Wisła Kraków",
+        "bet_1": "1Aazgt2bAi3pqJR5R3JPuUWgd8YrFMe7Eo",
+        "bet_X": "1PdDLyTvRx7DVNw8No6WdhfUPcUoXwm5vD",
+        "bet_2": "1PiTSUaahMiQvTNmdmoc9eawobXQ4HaKLc",
+        "host_h": "49b1e1af",
+        "guest_h": "9f1b812c"
+      },
+      {
+        "hour": "16:00",
+        "host": "Śląsk Wrocław",
+        "guest": "Lechia Gdańsk",
+        "bet_1": "183w1ugcwirpY1kEcNp9L6JRGCQM1AQxkD",
+        "bet_X": "1Q6xcxRkHFsrrHMn4KpkjnFVBxHaxpYqtZ",
+        "bet_2": "17TKWpi3Le5ZcRDvbWLzm4gg5363McTNHJ",
+        "host_h": "d087b9e7",
+        "guest_h": "e56d80e4"
+      }
+    ]
+  ],
+  [
+    "2015-04-25",
+    [
+      {
+        "hour": "16:00",
+        "host": "GKS Bełchatów",
+        "guest": "Jagiellonia Białystok",
+        "bet_1": "1JeLUfabxN5R2ei7oiEbHrfeKib1tdguNW",
+        "bet_X": "1QHUBz24hbzT7VbcDejkxrNz5qqixHtUE7",
+        "bet_2": "17tXKFWniBRzBbyvwEepnjmMRQdLiCoiYq",
+        "host_h": "e48ee6d9",
+        "guest_h": "3756286a"
+      },
+      {
+        "hour": "16:00",
+        "host": "Lech Poznań",
+        "guest": "Śląsk Wrocław",
+        "bet_1": "1LRZ4NCTWRft763vkc643SABnk2S8XG19j",
+        "bet_X": "1Ks27hs8EkfXYs5RNwrsvQeLcg8W7xA9A9",
+        "bet_2": "1CUDqn4S8zWqHyvYURRo7ZFnjVN4kt5Pxe",
+        "host_h": "1ac998ca",
+        "guest_h": "d087b9e7"
+      },
+      {
+        "hour": "16:00",
+        "host": "Lechia Gdańsk",
+        "guest": "Górnik Łęczna",
+        "bet_1": "1DrDQPWjh3uWo4tsScM39xjzpFV3xkVfTT",
+        "bet_X": "1PowosLL1MuSYrjP7iQaJ7SS7MY9Phv8fX",
+        "bet_2": "18Tcn4fTHFLoe9T93AFgDMcxqaAZEftZEH",
+        "host_h": "e56d80e4",
+        "guest_h": "a12ae773"
+      },
+      {
+        "hour": "16:00",
+        "host": "Piast Gliwice",
+        "guest": "Podbeskidzie Bielsko-Biała",
+        "bet_1": "1M7DKEZ3sraU1UJxDe12jo41My6Ziet6Bt",
+        "bet_X": "1PmnEgb6Mb164pf4WEWxeoAF2JJL6yo7CL",
+        "bet_2": "176oyDrofYseaKkxgAmAjYREos5MBxFTNr",
+        "host_h": "aab1adf",
+        "guest_h": "49b1e1af"
+      },
+      {
+        "hour": "16:00",
+        "host": "Pogoń Szczecin",
+        "guest": "Górnik Zabrze",
+        "bet_1": "1G2LH59GPtJkRbJo3yrUZzYLA2Tnf91BsY",
+        "bet_X": "13LFQehmGSukB9xwnJ9HXJgxZxHdFqL1fH",
+        "bet_2": "1KwE3xh7kUZEGcDSsWjGv3PQtWv73rmDCD",
+        "host_h": "f044e675",
+        "guest_h": "f4636514"
+      },
+      {
+        "hour": "16:00",
+        "host": "Ruch Chorzów",
+        "guest": "Legia Warszawa",
+        "bet_1": "19ZgYJJReoE3xRUS85RpYBgXBBDqSsk3iG",
+        "bet_X": "15bg1aqwDnkpmj4JNNa2PcZASRU4dFbs8j",
+        "bet_2": "1ABrB1R9ns8SvZiHMu8onYTntxFGS3fAUX",
+        "host_h": "134a646e",
+        "guest_h": "30ee1a9"
+      },
+      {
+        "hour": "16:00",
+        "host": "Wisła Kraków",
+        "guest": "Korona Kielce",
+        "bet_1": "14cf1X4joF3rhj1aZpyumSZFXodz4SzfV8",
+        "bet_X": "1E9YXbGQz9YRc6gBs1yuRjpt2SZe8MiZPf",
+        "bet_2": "17dpxQQc3q3gips9THZrJ3s8PowVFXeGr2",
+        "host_h": "9f1b812c",
+        "guest_h": "1645d4c3"
+      },
+      {
+        "hour": "16:00",
+        "host": "Zawisza Bydgoszcz",
+        "guest": "Cracovia Kraków",
+        "bet_1": "13WbphwQo7Pg462hfFupuobeuQ8j2Bo88p",
+        "bet_X": "1KYutn8BRugz4eFAkhoeexLCZ2rYJgJt9E",
+        "bet_2": "17NLzLaSeYXh9fQgVaYWhdWrjfDJbhr4tF",
+        "host_h": "28522c84",
+        "guest_h": "2a46acec"
+      }
+    ]
+  ],
+  [
+    "2015-04-29",
+    [
+      {
+        "hour": "16:00",
+        "host": "Cracovia Kraków",
+        "guest": "GKS Bełchatów",
+        "bet_1": "1P7qNHkWTDbcdFMGnxSZcyztoqu5qTXoTz",
+        "bet_X": "16ToKv7hGM8Np53dx43LkNSjZTZdYqKs4N",
+        "bet_2": "12Gfu2deECVN7DqYrMBTfYjskqXEQdEYPr",
+        "host_h": "2a46acec",
+        "guest_h": "e48ee6d9"
+      },
+      {
+        "hour": "16:00",
+        "host": "Górnik Łęczna",
+        "guest": "Piast Gliwice",
+        "bet_1": "1FN2b8Y7gRP9nTCYDHCMc6dizHHYFaAdnE",
+        "bet_X": "178R2D1hehh3cXSpF31eQ3bzC8JDbiNK4j",
+        "bet_2": "1P9aokrWS7qdFsMR8kZ3Cow28zTpERCFrr",
+        "host_h": "a12ae773",
+        "guest_h": "aab1adf"
+      },
+      {
+        "hour": "16:00",
+        "host": "Górnik Zabrze",
+        "guest": "Zawisza Bydgoszcz",
+        "bet_1": "1FDKSu64EV3uaH96fsq9Qqt6b65mNSQHJT",
+        "bet_X": "1G7VxXAwbpqgqt8m3k7eckR4gPuZDW9Twe",
+        "bet_2": "1Tm8nG41frmLrHqSWbZCc5FyazXWQ6bmM",
+        "host_h": "f4636514",
+        "guest_h": "28522c84"
+      },
+      {
+        "hour": "16:00",
+        "host": "Jagiellonia Białystok",
+        "guest": "Ruch Chorzów",
+        "bet_1": "19tvEYY5Lq5u4J5Qvp2RTAR4SXcXZMbDeK",
+        "bet_X": "16KZrU78oCS7cQuu3BCwd7wSwpiengspYy",
+        "bet_2": "1PxbqViy9y61urqBsVKxmAWry6XFdarv5S",
+        "host_h": "3756286a",
+        "guest_h": "134a646e"
+      },
+      {
+        "hour": "16:00",
+        "host": "Korona Kielce",
+        "guest": "Lechia Gdańsk",
+        "bet_1": "1rKYrmQZLCmcYhfgozFcGTRcD2cMooNjP",
+        "bet_X": "1DJSCYdD47w4EpzAGbzCyoHJuRx9KTnJP5",
+        "bet_2": "13tDDgHU489a2Vd2maySG2wAewUWpbrACp",
+        "host_h": "1645d4c3",
+        "guest_h": "e56d80e4"
+      },
+      {
+        "hour": "16:00",
+        "host": "Legia Warszawa",
+        "guest": "Pogoń Szczecin",
+        "bet_1": "1BfHcKrHgKWRjfdZLWQngB4VxKU7kF2sSh",
+        "bet_X": "1KRXrs299sw8rBQACzW7F9gqLYniBKgZr8",
+        "bet_2": "1M9LRcnRxeV27nS6HT8BWtCAwjBquNmgaF",
+        "host_h": "30ee1a9",
+        "guest_h": "f044e675"
+      },
+      {
+        "hour": "16:00",
+        "host": "Podbeskidzie Bielsko-Biała",
+        "guest": "Lech Poznań",
+        "bet_1": "14vroxaobNiYibcFmqUrqjmxMLATHZ5zRq",
+        "bet_X": "1FhKsvVuE6LSRM9yfjiZrxTAH656DWAixL",
+        "bet_2": "1G6cjFcCpHxmwU2Wga2meid3FrSw6AzonS",
+        "host_h": "49b1e1af",
+        "guest_h": "1ac998ca"
+      },
+      {
+        "hour": "16:00",
+        "host": "Śląsk Wrocław",
+        "guest": "Wisła Kraków",
+        "bet_1": "1MLpcsUXCjfmPMDr5wDn1ky6S4GVHGgdcF",
+        "bet_X": "1NthfjJYRCVzTozNL1Ves8VTaPC7VnQrWt",
+        "bet_2": "1PLmEGyfS7EnVyxBAH3BZ6QNKEgVwnPKQ2",
+        "host_h": "d087b9e7",
+        "guest_h": "9f1b812c"
+      }
+    ]
+  ]
+]
 </script>
 
 
