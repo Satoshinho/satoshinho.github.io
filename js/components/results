@@ -1,0 +1,38 @@
+var Result = React.createClass({displayName: "Result",
+  render: function() {
+    return (
+      React.createElement("tr", null, 
+        React.createElement("td", null, 
+          this.props.date
+        ), 
+        React.createElement("td", null, 
+          this.props.host, " vs. ", this.props.guest
+        ), 
+        React.createElement("td", null, 
+          this.props.result
+        )
+      )
+    )
+  }
+})
+
+var ResultList = React.createClass({displayName: "ResultList",
+  render: function() {
+    var resultNodes = this.props.data.map(function(result){
+      return (
+        React.createElement(Result, React.__spread({},  result))
+      )
+    })
+    return (
+      React.createElement("table", null, 
+        resultNodes
+      )
+    )
+  }
+})
+
+React.render(
+  React.createElement(ResultList, {data: data }),
+  document.getElementById('content')
+)
+;

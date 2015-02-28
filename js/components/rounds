@@ -90,7 +90,6 @@ var Modal = React.createClass({displayName: "Modal",
     var keys = [this.props.bet_1, this.props.bet_X, this.props.bet_2]
 
     $.getJSON('https://blockchain.info/multiaddr?active='+keys.join('|')+'&cors=true', function(json){
-      console.log(json)
 
       //var tbody = $('#bets').html('')
       var final_balance = json.wallet.final_balance/100
@@ -262,14 +261,14 @@ var Modal2 = React.createClass({displayName: "Modal2",
     var socket = this.socket = new WebSocket('wss://ws.blockchain.info/inv')
     socket.onopen = function(event) {
         that.timeoutID = null
-        socket.send('{"op":"unconfirmed_sub"}')
-        //socket.send('{"op":"addr_sub", "addr":"'+addr+'"}')
+        //socket.send('{"op":"unconfirmed_sub"}')
+        socket.send('{"op":"addr_sub", "addr":"'+that.props.addr+'"}')
 
         socket.onmessage = function(event) {
             var data = JSON.parse(event.data).x
             var from = data.inputs[0].prev_out.addr
             // TODO check only for bitcoins send to X addr
-            var value = data.inputs[0].prev_out.value / 100 // bits
+            var value = data.out[0].value / 100 // bits
 
             that.setState({
                 visible: true,
@@ -280,13 +279,13 @@ var Modal2 = React.createClass({displayName: "Modal2",
                 }
             })
 
-            console.log('Client received a message', data);
+            //console.log('Client received a message', data);
             window.clearTimeout(that.timeoutID)
             that.timeoutID = window.setTimeout(function() {
                 that.setState({
                     visible: false
                 })
-            }, 1000) // 10 sec
+            }, 10000) // 10 sec
         };
     }
 

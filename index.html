@@ -25,6 +25,16 @@
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
 
+        <script src="/js/vendor/react.js"></script>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/plugins.js"></script>
+        <script src="/js/moment.min.js"></script>
+        <script src="/js/vendor/jquery.zclip.min.js"></script>
+
         <div class="jumbotron myheader">
   <div class="container">
     <h1 class="text-right">Zaryzykuj wszystko.</h1>
@@ -34,74 +44,73 @@
   </div>
 </div>
 
-  <div class="container steps">
-
-    <p class="text-center">
-      <i>Jak to działa w 4 prostych krokach:</i>
-    </p>
-    <div class="row">
-      <div class="col-md-3 col-sm-3 col-xs-6">
-        <button type="button" class="btn btn-default btn-lg">
-          <span class="glyphicon glyphicon-hand-up"></span>
-        </button>
-        <p>1. Wybierz mecz</p>
-        <p>
-        Do wyboru wszystkie mecze polskiej ekstraklasy. Mało? Daj znać na <a href="mailto:">satoshinho@gmx.com</a> jaką inną ligę chciałbyś typować.
-        </p>
-      </div>
-      <div class="col-md-3 col-sm-3 col-xs-6">
-        <button type="button" class="btn btn-default btn-lg">
-          <span class="glyphicon glyphicon-pencil"></span>
-        </button>
-        <p>2. Wytypuj wynik</p>
-        <p>
-          Wskaż zwycięzce. Kurs zależy od typów innych uczestników zakładu, przez co może zmieniać się w czasie. Masz czas do pierwszego gwizdka.
-        </p>
-      </div>
-      <div class="col-md-3 col-sm-3 col-xs-6">
-        <button type="button" class="btn btn-default btn-lg">
-          <span class="glyphicon glyphicon-qrcode"></span>
-        </button>
-        <p>3. Dokonaj wpłaty</p>
-        <p>
-        Korzystając z Twojego portfela bitcoin, wpłać dowolną kwotę (&#8805; 5 <abbr title="mili bitcoin (tysięczne części bitcoin'a)">mBTC</abbr>) na podany adres. Nowy w świecie bitcoin'a? <a href="https://www.youtube.com/watch?v=Gc2en3nHxA4" target="_blank">Oglądnij wprowadzenie</a>.
-        </p>
-      </div>
-      <div class="col-md-3 col-sm-3 col-xs-6">
-        <button type="button" class="btn btn-default btn-lg">
-          <span class="glyphicon glyphicon-time"></span>
-        </button>
-        <p>4. Czekaj na wygraną</p>
-        <p>
-        Do końca sezonu <b>prowizja od wygranej wynosi 0%!</b> Wypłaty na adres nadawcy zakładu. <small>(Tymczasowo dokonywane po zakończeniu całej kolejki.)</small>
-        </p>
-      </div>
+<div class="container steps">
+  <p class="text-center">
+    <i>Jak to działa w 4 prostych krokach:</i>
+  </p>
+  <div class="row">
+    <div class="col-md-3 col-sm-3 col-xs-6">
+      <button type="button" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-hand-up"></span>
+      </button>
+      <p>1. Wybierz mecz</p>
+      <p>
+      Do wyboru wszystkie mecze polskiej ekstraklasy. Mało? Daj znać na <a href="mailto:">satoshinho@gmx.com</a> jaką inną ligę chciałbyś typować.
+      </p>
+    </div>
+    <div class="col-md-3 col-sm-3 col-xs-6">
+      <button type="button" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-pencil"></span>
+      </button>
+      <p>2. Wytypuj wynik</p>
+      <p>
+        Wskaż zwycięzce. Kurs zależy od typów innych uczestników zakładu, przez co może zmieniać się w czasie. Masz czas do pierwszego gwizdka.
+      </p>
+    </div>
+    <div class="col-md-3 col-sm-3 col-xs-6">
+      <button type="button" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-qrcode"></span>
+      </button>
+      <p>3. Dokonaj wpłaty</p>
+      <p>
+      Korzystając z Twojego portfela bitcoin, wpłać dowolną kwotę (&#8805; 5 <abbr title="mili bitcoin (tysięczne części bitcoin'a)">mBTC</abbr>) na podany adres. Nowy w świecie bitcoin'a? <a href="https://www.youtube.com/watch?v=Gc2en3nHxA4" target="_blank">Oglądnij wprowadzenie</a>.
+      </p>
+    </div>
+    <div class="col-md-3 col-sm-3 col-xs-6">
+      <button type="button" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-time"></span>
+      </button>
+      <p>4. Czekaj na wygraną</p>
+      <p>
+      Do końca sezonu <b>prowizja od wygranej wynosi 0%!</b> Wypłaty na adres nadawcy zakładu. <small>(Tymczasowo dokonywane po zakończeniu całej kolejki.)</small>
+      </p>
     </div>
   </div>
+</div>
 
-  <div id="content" class="container">
-  </div>
+<div id="content" class="container">
+</div>
 
 <!-- Modal -->
 <div id="modal"></div>
 <div id="modal2"></div>
 
 <div class="jumbotron">
-<div class="container">
-  <h1>Bądź na bieżąco!</h1>
-  <p>
-    Zapisz się na nasz newsletter i otrzymuj powiadomienia z podsumowaniem ubiegłej i zapowiedzią zbliżającej się ligowej kolejki. Każdy mecz będzie miał też przypisane adresy do wpłat, dzięki którym nie będziesz nawet musiał wchodzić na tą stronę aby obstawić wynik! Dość rewolucyjna propozycja, czyż nie?
-  </p>
+  <div class="container">
+    <h1>Bądź na bieżąco!</h1>
+    <p>
+      Zapisz się na nasz newsletter i otrzymuj powiadomienia z podsumowaniem ubiegłej i zapowiedzią zbliżającej się ligowej kolejki. Każdy mecz będzie miał też przypisane adresy do wpłat, dzięki którym nie będziesz nawet musiał wchodzić na tą stronę aby obstawić wynik! Dość rewolucyjna propozycja, czyż nie?
+    </p>
 
-<form method="post" action="https://app.freshmail.pl//pl/actions/subscribe/" role="form">
-  <div class="form-group">
-    <input type="hidden" name="subscribers_list_hash" value="k3v87lvhx6" />
-    <input class="form-control" type="text" id="freshmail_email" name="freshmail_email" placeholder="Adres email" />
+  <form method="post" action="https://app.freshmail.pl//pl/actions/subscribe/" role="form">
+    <div class="form-group">
+      <input type="hidden" name="subscribers_list_hash" value="k3v87lvhx6" />
+      <input class="form-control" type="text" id="freshmail_email" name="freshmail_email" placeholder="Adres email" />
+    </div>
+    <input class="btn btn-primary btn-lg" type="submit" value="Wyślij" />
+  </form>
+
   </div>
-  <input class="btn btn-primary btn-lg" type="submit" value="Wyślij" />
-</form>
-
-</div>
 </div>
 
 <script>
@@ -878,22 +887,12 @@ var data = [
   ]
 ]
 </script>
+<script type="text/javascript" src="/js/components/rounds"></script>
 
-
-        <script src="/js/vendor/react.js"></script>
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="/js/bootstrap.min.js"></script>
-        <script src="/js/plugins.js"></script>
-        <script src="/js/moment.min.js"></script>
-        <script src="/js/vendor/jquery.zclip.min.js"></script>
 
         <script src="//static.getclicky.com/js" type="text/javascript"></script>
         <script type="text/javascript">try{ clicky.init(100732040); }catch(e){}</script>
         <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100732040ns.gif" /></p></noscript>
 
-        <script type="text/javascript" src="/js/components"></script>
     </body>
 </html>
