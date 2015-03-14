@@ -17,8 +17,25 @@ var Result = React.createClass({displayName: "Result",
 })
 
 var ResultList = React.createClass({displayName: "ResultList",
+
+  getInitialState: function() {
+    return {
+      data: []
+    }
+  },
+
+  componentDidMount: function() {
+    $.get(this.props.source, function(result) {
+      if (this.isMounted()) {
+        this.setState({
+          data: result
+        })
+      }
+    }.bind(this))
+  },
+
   render: function() {
-    var resultNodes = this.props.data.map(function(result){
+    var resultNodes = this.state.data.map(function(result){
       return (
         React.createElement(Result, React.__spread({},  result))
       )
@@ -32,7 +49,7 @@ var ResultList = React.createClass({displayName: "ResultList",
 })
 
 React.render(
-  React.createElement(ResultList, {data: data }),
+  React.createElement(ResultList, {source: "/data/archive.json"}),
   document.getElementById('content')
 )
 ;

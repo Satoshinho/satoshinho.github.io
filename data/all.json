@@ -1,0 +1,626 @@
+[
+  [
+    "2015-02-28",
+    {
+      "b926fc97": {
+        "hour": "Postp.",
+        "host": "Leicester City",
+        "guest": "Chelsea",
+        "bet_1": "1NBz6X9nLtJ56gq9u6nLtShP6mDoeM1df3",
+        "bet_X": "1Amy3DS2rMsEauscJY1HhAx8164hFL5PrH",
+        "bet_2": "1DrFDibco4yUQoxJv6VTu6yPnX1EW7GuMz"
+      }
+    }
+  ],
+  [
+    "2015-03-14",
+    {
+      "3b48ceb5": {
+        "hour": "12:45",
+        "host": "Crystal Palace",
+        "guest": "Queens Park Rangers",
+        "bet_1": "1LpyL5deVvyRTLmQsPm9tYtLR5y1mp8iLd",
+        "bet_X": "1Jnp2DiQ1svpj8DshwvTbmottbDtT1dYTL",
+        "bet_2": "16zAvd71MKRrg2DHzyfEfXiYNnzBCqjht1"
+      },
+      "7b27a0dc": {
+        "hour": "15:00",
+        "host": "Arsenal",
+        "guest": "West Ham United",
+        "bet_1": "1Ag5LG5tMKfVqZbb2bYaLqfn2s84fioZN5",
+        "bet_X": "1CJWkdr7Bmqqa1p6ga9cHLFyV8k4KwL6ki",
+        "bet_2": "16LFKmh4Ga5imXQxFVUdJ2pFNF2AGTqFe4"
+      },
+      "1cdefbfe": {
+        "hour": "15:00",
+        "host": "Everton",
+        "guest": "Newcastle United",
+        "bet_1": "1CytsvHAWxbSj8X4poEabqqTo8Gvcnnk5o",
+        "bet_X": "194XXWLEiad5RQK8wJb4V6pgu2zZYpjx5U",
+        "bet_2": "1BCdv1WfMiqfap4ckQMfcKHEgcEbazXGPF"
+      },
+      "f077f26d": {
+        "hour": "15:00",
+        "host": "Leicester City",
+        "guest": "Hull City",
+        "bet_1": "1F7YopDwAU4piR5ohVMzqRwLRgfhVgu6Yg",
+        "bet_X": "14VV84mmLiJd4P7hbyY75BB5Lph9j84XBs",
+        "bet_2": "1MD2cYbPVbxEMN5NHco71kKHYLSmE14YJr"
+      },
+      "41edaa59": {
+        "hour": "15:00",
+        "host": "Sunderland",
+        "guest": "Aston Villa",
+        "bet_1": "1iGbGBJ4J43ZZ6MqHHYpYoornLqepHQCK",
+        "bet_X": "1395a5YtLNJHM3LGdNsmCsS7eRFX7xR2Db",
+        "bet_2": "1P1EiFfDMq5EUcdmmC9rCChF7Mor3tgUGF"
+      },
+      "1f831d8e": {
+        "hour": "15:00",
+        "host": "West Bromwich Albion",
+        "guest": "Stoke City",
+        "bet_1": "1BLoUQCKA6iT2gVeacyDSRxzXBicPdA6nF",
+        "bet_X": "1Q6hSVS1tyHBaYGMb8QKvBtcZbp2XkAmMS",
+        "bet_2": "18fNaCzKEjD2zpFupr3dpNsY1DmWFSaJuN"
+      },
+      "c1a7f896": {
+        "hour": "17:30",
+        "host": "Burnley",
+        "guest": "Manchester City",
+        "bet_1": "16WbvwfCiBhhjfdhDBwyuHn4H9EronDB88",
+        "bet_X": "16e93dJVRh2DEHv2aiqv74bTnnC6bKTqY6",
+        "bet_2": "1386vJRSaEMHr9JRx7zwNbKhAnJRPdESog"
+      },
+      "d5b9ca1a": {
+        "hour": "17:00",
+        "host": "Cracovia Kraków",
+        "guest": "Piast Gliwice",
+        "bet_1": "1JAcRJesRnwRHuWqRKQrvZEceCGXFVmpG4",
+        "bet_X": "1NB6hHsGG8EX6KWqhMCzNkZzkGS1d9wbXN",
+        "bet_2": "12sy4frduAKuENgyPJsXpQQMCR6mk8hGJX"
+      },
+      "71fba87f": {
+        "hour": "17:00",
+        "host": "GKS Bełchatów",
+        "guest": "Ruch Chorzów",
+        "bet_1": "1FMBEfgFAZud4D6r83e78dQumRQ6LdUToQ",
+        "bet_X": "14BPQVFkiAtuSJmCgpMhnLrqmzWV25ptkE",
+        "bet_2": "14fWy6MB9pyXb5YXd5wkWqa2cbxuVJwF7b"
+      },
+      "e97df96b": {
+        "hour": "17:00",
+        "host": "Górnik Zabrze",
+        "guest": "Podbeskidzie Bielsko-Biała",
+        "bet_1": "1PFs8xEDah1YUGZ5hehdwbgunCpgirEbQ8",
+        "bet_X": "155wTiH9FhFnzQ3eyF39y8eN9Zwg87SFaQ",
+        "bet_2": "1CXaknAGVWGsXNANQ8Up2576Q4YCtKyBJo"
+      },
+      "cd6099d6": {
+        "hour": "17:00",
+        "host": "Jagiellonia Białystok",
+        "guest": "Górnik Łęczna",
+        "bet_1": "1DMeUHN5fyWRhpvebS3SckAfq5SgH5oXn",
+        "bet_X": "1CbxY8X2B3jRLfeh25BasGHvAYSvXUDRax",
+        "bet_2": "1GSWUZAtRVzwDsGhDsXsXpqabdP3hXCrgV"
+      },
+      "2c7b7446": {
+        "hour": "17:00",
+        "host": "Korona Kielce",
+        "guest": "Śląsk Wrocław",
+        "bet_1": "1ByNb76euJyjmoy7zjgf17ReF3uLSjPd5i",
+        "bet_X": "1EB43nTjxrsRWsQAc6LHjqH3oxdFe5qnTk",
+        "bet_2": "1EheALtWaTzsqZBxZ9b1sivg51rdimXoaD"
+      },
+      "d73d2292": {
+        "hour": "17:00",
+        "host": "Legia Warszawa",
+        "guest": "Wisła Kraków",
+        "bet_1": "12R6TStLbakju7MuGwcmhHkj68Ck8fxjSZ",
+        "bet_X": "1AX4CeueAVey4ATGVUdfB1CwRsVfuWdzP4",
+        "bet_2": "14rAYXQY6UZg2u14gkv2fgAeTjHAVarqEh"
+      },
+      "32b1da2e": {
+        "hour": "17:00",
+        "host": "Pogoń Szczecin",
+        "guest": "Lechia Gdańsk",
+        "bet_1": "15sLSYEdeEwEgmds7X5vyktehdHFVimST7",
+        "bet_X": "1PQyFUjb68prNKw4izLWuReUtS2RdMmWe9",
+        "bet_2": "15GeMtwMPkFo26mkF3TfrQznQKEhjGugAz"
+      },
+      "6d07313e": {
+        "hour": "17:00",
+        "host": "Zawisza Bydgoszcz",
+        "guest": "Lech Poznań",
+        "bet_1": "18NVND7GLf6JcgwLgxV7A8uaQqbsxqjHM4",
+        "bet_X": "1BwPDX3qRc9VRCMKSxRtLCbcLqdEazoqcf",
+        "bet_2": "1GCMNA5tQxdQvSN5G6FaMCQjqMXu5363vi"
+      }
+    }
+  ],
+  [
+    "2015-03-15",
+    {
+      "0e617769": {
+        "hour": "13:30",
+        "host": "Chelsea",
+        "guest": "Southampton",
+        "bet_1": "14ntuRGAuJzcSAAinhFF9vaky8uAYgtmWM",
+        "bet_X": "1M3RRaZCeFrQaVmCLz83MWy9WU7hxNN2oq",
+        "bet_2": "1Cg2rFzhzMevnXizTNBkNxKTVAkyNW97aa"
+      },
+      "6eb1f47f": {
+        "hour": "16:00",
+        "host": "Manchester United",
+        "guest": "Tottenham Hotspur",
+        "bet_1": "13DWjsPh5Wnm9C79wm6Ke4hRwk7mZ9ZtAL",
+        "bet_X": "1893175jtehAUGQu1xo1W7Fz6X2nAAQK69",
+        "bet_2": "18Kcr8PuhejguK85sCTReYNY4dKERatSwQ"
+      }
+    }
+  ],
+  [
+    "2015-03-16",
+    {
+      "85ef0aea": {
+        "hour": "20:00",
+        "host": "Swansea City",
+        "guest": "Liverpool",
+        "bet_1": "1FQz7sWi5fVRoAD1bBJon3r3P2JiiuBfWj",
+        "bet_X": "14T1sWZnwhtEUAy1Z1tGXGYhCJLKik48pZ",
+        "bet_2": "13atLfuHPsySyWcFg7szb9QBWesw48XwG6"
+      }
+    }
+  ],
+  [
+    "2015-03-21",
+    {
+      "ad60f670": {
+        "hour": "12:45",
+        "host": "Manchester City",
+        "guest": "West Bromwich Albion",
+        "bet_1": "129FUFaJaSykCGwmvERPngxZkk1KNRmhtr",
+        "bet_X": "1FcyyFPn8VidqrasTUAkam6JwSABGLHquk",
+        "bet_2": "1Lvego5Dtm6RzeLciHPpdpQxNw42ahtwaz"
+      },
+      "6df2f800": {
+        "hour": "15:00",
+        "host": "Aston Villa",
+        "guest": "Swansea City",
+        "bet_1": "1G8sUvSer6oZUNysEyFakbkwns3VXPKicF",
+        "bet_X": "1AbbsTMaA3QX2Yj3afejJYvRp4T4aC8uKE",
+        "bet_2": "1DfGE7GRQjmHsezUXsvvqgF1QpkLo8Fbsn"
+      },
+      "9a1dcb90": {
+        "hour": "15:00",
+        "host": "Newcastle United",
+        "guest": "Arsenal",
+        "bet_1": "16gUzbENrfeZMFD1NVASyieqgFnu9vafv5",
+        "bet_X": "1MfaZMibnysicF5iM1GyGBd9sUoCrYWrDf",
+        "bet_2": "12Dp1LJ91FfxUzvxAQTccNrUh1Uu6sRcvZ"
+      },
+      "fb9557a2": {
+        "hour": "15:00",
+        "host": "Queens Park Rangers",
+        "guest": "Everton",
+        "bet_1": "1NTnzPiWZ7D4RjUrExrwtjFY5kSoMhPd95",
+        "bet_X": "14nFa5tE6kUsqYY97Zqrhv9B8qoajMsWWp",
+        "bet_2": "1MRj3A4aGZEyNGb4CDaAmac2TDPJzuHtt7"
+      },
+      "562680dc": {
+        "hour": "15:00",
+        "host": "Southampton",
+        "guest": "Burnley",
+        "bet_1": "1JGYZ3dC2XYyxu1PuPPE83FDPJbkFAtbND",
+        "bet_X": "1JeaFpL5GduhbcP2Lx3QQzzRSh15eFwzB1",
+        "bet_2": "13uGxs63Lz2PAjxHHaz2FV8UMzLySv9bHY"
+      },
+      "6adbfaa3": {
+        "hour": "15:00",
+        "host": "Stoke City",
+        "guest": "Crystal Palace",
+        "bet_1": "1PfPaxZVVtDNYVCBqk1PhNM1vPvTcZ4Q1h",
+        "bet_X": "1FvsP33ZRLeXURMmjz2yWWG7D1sMjTQqdG",
+        "bet_2": "1H5QDu6W17672FGB1hbmPUT9pDh7qBWxC8"
+      },
+      "dc32aac7": {
+        "hour": "15:00",
+        "host": "Tottenham Hotspur",
+        "guest": "Leicester City",
+        "bet_1": "1DDyqfUyqRkVTnUZ42wc7rNEekPpQrLFHs",
+        "bet_X": "1Gy2vFCbGVnFScXXZntZ8ecs5TJW3MY6bd",
+        "bet_2": "123jLn1NDbpGv194sQhyXrLQrGBWteAqKy"
+      },
+      "190214de": {
+        "hour": "17:30",
+        "host": "West Ham United",
+        "guest": "Sunderland",
+        "bet_1": "1GaUPXnexNfnThwZcXVFQXTLnmVphkCsUr",
+        "bet_X": "1Q89Gs4tVQs2K9VKbCg1vuyNqwPzY9SYnr",
+        "bet_2": "1EjZZWWjUcSsaaCKUPzawaNjY1bmSQaAaq"
+      },
+      "5560e832": {
+        "hour": "17:00",
+        "host": "Górnik Łęczna",
+        "guest": "Śląsk Wrocław",
+        "bet_1": "1FdJiH36i1jRmDdTdAZt3byjC8mHaoyfSu",
+        "bet_X": "1GPZQ92c4fjWVXpdXSYbyAqxd9wRk6y2t3",
+        "bet_2": "1ECUgAewJjwVuH3SASxCzyNcadKxdm9hEx"
+      },
+      "111483cc": {
+        "hour": "17:00",
+        "host": "Lech Poznań",
+        "guest": "Legia Warszawa",
+        "bet_1": "1682kGfd3AUBWFpKV5syL4SoeyWEWkEV19",
+        "bet_X": "12hcgeExwWcG1acDJVHfBo73bC7h5f5S37",
+        "bet_2": "1CPGdX2qrQBAGWe1GtthGJPCfWS74oCaSg"
+      },
+      "3780f329": {
+        "hour": "17:00",
+        "host": "Lechia Gdańsk",
+        "guest": "Górnik Zabrze",
+        "bet_1": "1NuqRNJKwUCJh3cG6drccH6sLZpEpiewAf",
+        "bet_X": "1MneTC8SLVpL8byairEfj529yHGEMu3ofw",
+        "bet_2": "15mFBDMwYUnaUFoTzJYiWyS7REks5mLuyf"
+      },
+      "2f2e41e2": {
+        "hour": "17:00",
+        "host": "Piast Gliwice",
+        "guest": "Korona Kielce",
+        "bet_1": "1CXtZaHuBPXGJ3DdTFkKaQ4CMWBYDFjx2G",
+        "bet_X": "1G3MXsZmBW4oEVF9tnMfY9jGvmAqiPvNNZ",
+        "bet_2": "19vXsTqwNCESB5qoeCU4pbRqhFmDw9kDG6"
+      },
+      "7acfe042": {
+        "hour": "17:00",
+        "host": "Podbeskidzie Bielsko-Biała",
+        "guest": "Jagiellonia Białystok",
+        "bet_1": "1ChJdfE3KXQMfVD5o418qHteVTeSiXARGc",
+        "bet_X": "1CudM6LXrWd4JrvkjztziAui9MNaTSRDZM",
+        "bet_2": "1KbvNhJdbK2uw2BNDBbXxN1Usx6dFKbLdg"
+      },
+      "91339a82": {
+        "hour": "17:00",
+        "host": "Pogoń Szczecin",
+        "guest": "GKS Bełchatów",
+        "bet_1": "1L17pYTai6k2zdM99Ah7tkXGi9f9FptRo8",
+        "bet_X": "1gwf49mMLDQN1kTCiRSXFvZF9SoTR9euh",
+        "bet_2": "1NpVe8WgKFwUbreZxBSpmuY3zDY3kU7Ksy"
+      },
+      "89be06d4": {
+        "hour": "17:00",
+        "host": "Ruch Chorzów",
+        "guest": "Zawisza Bydgoszcz",
+        "bet_1": "1HszbX7sBDJ7LezSiKod9SW1GPDnZHjJRq",
+        "bet_X": "1RV2W1VPeK9eyZ5WKFC6ofSc3RCYS5AZS",
+        "bet_2": "1KrSc72ajmJrAy8v7HWz1tJrcuawtYgkz7"
+      },
+      "615dba88": {
+        "hour": "17:00",
+        "host": "Wisła Kraków",
+        "guest": "Cracovia Kraków",
+        "bet_1": "1HT42CApZfiwkjRFV4WssZ58svsm1GqaDM",
+        "bet_X": "19euAwXdn1xAhoqK5ibRPHzbMRMHPBtDn4",
+        "bet_2": "1GLQdwWYQh6CeKX1rrc4fLRJtcymhFa88W"
+      }
+    }
+  ],
+  [
+    "2015-03-22",
+    {
+      "0027d6f6": {
+        "hour": "13:30",
+        "host": "Liverpool",
+        "guest": "Manchester United",
+        "bet_1": "19M9snMnRcGrRqGGY59w7VrRELaWRPNRha",
+        "bet_X": "1CvmmEbihNqxbatDeAzepFj4F2Uo8AE2hQ",
+        "bet_2": "1MS2q3GZAX7SEqizGJ4VrfBDG9aEVMstwh"
+      },
+      "8f8b0fe3": {
+        "hour": "16:00",
+        "host": "Hull City",
+        "guest": "Chelsea",
+        "bet_1": "1LryfMcaekTn63ss3RxQRMTydMK9V797Sq",
+        "bet_X": "12EtqLSYDM5ecsCF467gZF8gWrMRtPNkps",
+        "bet_2": "1L8yLymVs7ARzFemNLYr8DNzeBBciWdQm9"
+      }
+    }
+  ],
+  [
+    "2015-04-04",
+    {
+      "8a1fd3ed": {
+        "hour": "14:00",
+        "host": "Arsenal",
+        "guest": "Liverpool",
+        "bet_1": "1CA2D3mnJdLrdYfoFnL6G11a1rEGcskhyW",
+        "bet_X": "15x7cTEw1rr1KSx7cVwXqDLwUkGNVQJEHS",
+        "bet_2": "1P2LuqdJ28Y7MMoSKLh9J4NN3niw8wuTB7"
+      },
+      "720f8442": {
+        "hour": "14:00",
+        "host": "Burnley",
+        "guest": "Tottenham Hotspur",
+        "bet_1": "12CoXvUMSL5pyFRUPGiEnvu7pP9guNokqq",
+        "bet_X": "13VyQ9K8QEsCc74nEFF3Azu27RJaY87U5W",
+        "bet_2": "1g8TMcyQKYpceWPPRJngBoL8YwZ4QezwT"
+      },
+      "e7c05e79": {
+        "hour": "14:00",
+        "host": "Chelsea",
+        "guest": "Stoke City",
+        "bet_1": "1HzvznCU7rRMZRvYVZDKeFvEHxKUFuVMTh",
+        "bet_X": "1FSWkSYTy1VocxJr1rGGfBVqjY2YY1ZEty",
+        "bet_2": "17MJEy6onWCf3rPwaZ84f5wqs1wjK9rbCj"
+      },
+      "537fd3ba": {
+        "hour": "14:00",
+        "host": "Crystal Palace",
+        "guest": "Manchester City",
+        "bet_1": "1HMapKfbNb6ubSaXMBuR8KxBwPFw5ZKuni",
+        "bet_X": "1FKy7uRGBN5pyfKiZHCGK3VHAkfHfmHu9J",
+        "bet_2": "1GuGMbmmaqRCoWNgXVzAfyVTVFxVYodqBi"
+      },
+      "ea4bcbe4": {
+        "hour": "14:00",
+        "host": "Everton",
+        "guest": "Southampton",
+        "bet_1": "1N5gcTxZuFjHqtT7pRJ56qsdmKzzzWvXzE",
+        "bet_X": "1MdKQZPkfye9CjDJhagfG4uwNXAxFmDCiC",
+        "bet_2": "17USfoYwM2yZYLxUTp3YvuG6S6XpXEFctZ"
+      },
+      "9f2c5397": {
+        "hour": "14:00",
+        "host": "Leicester City",
+        "guest": "West Ham United",
+        "bet_1": "1MaCS2fB21R3ebv3WQTx9TDmiAeLcW2Gti",
+        "bet_X": "1HAhJHgwbzaSQrS5ha7GNxPDVCzgvXKBgm",
+        "bet_2": "18rzgEstChiSuqtC2RUsc5HMwjV8EQHYGy"
+      },
+      "21a65356": {
+        "hour": "14:00",
+        "host": "Manchester United",
+        "guest": "Aston Villa",
+        "bet_1": "16ZtiV4DFv74Hh32uSqXsuwdz8ecme6g5i",
+        "bet_X": "18Zuoysmh2R6kCzeia2vo7iqEQm1mqPkrz",
+        "bet_2": "1KxtBB3hef1KkgNKf6FwtUyYYu2BnK7kbg"
+      },
+      "77b3f90c": {
+        "hour": "14:00",
+        "host": "Sunderland",
+        "guest": "Newcastle United",
+        "bet_1": "1AQJY8tuTTfF1RBNN8BHjLihTZ4P17Auq6",
+        "bet_X": "1MV1B5NHrx5ZLJqLTxigj5WpRtLmkJovQy",
+        "bet_2": "1M7GDEy8NJD9VQDFfErTwWiugc7GPevvSn"
+      },
+      "3b806c82": {
+        "hour": "14:00",
+        "host": "Swansea City",
+        "guest": "Hull City",
+        "bet_1": "1DBUoV1wXj2TttbyNeSHMKzmpr1VKGwZ5e",
+        "bet_X": "1DobJcmuSvykMSqxwRDZJJXWNjNK5KUx3b",
+        "bet_2": "1DLFYHNqRvoLaSQ2B2dGke5TQNJCBCzsnL"
+      },
+      "6539b258": {
+        "hour": "14:00",
+        "host": "West Bromwich Albion",
+        "guest": "Queens Park Rangers",
+        "bet_1": "183KU4yW9wm9YTRx2QW5brLYci59BHJmtj",
+        "bet_X": "1NSXgZwdf4phY7yBiThnM5vpDixG4hBz1a",
+        "bet_2": "14C2Kq2HXTAwQYJjvnqASUCWdm35WJEaVg"
+      },
+      "057053e7": {
+        "hour": "16:00",
+        "host": "Cracovia Kraków",
+        "guest": "Lechia Gdańsk",
+        "bet_1": "13FUy62MfzBmBE6pNmYLZmExyRxKR92SgZ",
+        "bet_X": "1LxY1yMoY1nQeFziGy8Sd1QzrrVTbNZF4T",
+        "bet_2": "14ftDBWEBC5u7w2dhsCSkgtZ7bJA5HSguL"
+      },
+      "dea9e04b": {
+        "hour": "16:00",
+        "host": "GKS Bełchatów",
+        "guest": "Lech Poznań",
+        "bet_1": "15vjrbpUMF5mMH8hLSLtYfJV83V8wziGQP",
+        "bet_X": "1PydBWr2TKjhzSJqdb2niC9ZUs3Mi8oZhz",
+        "bet_2": "1BQcwezu1dxtAG76H3SPuzFZZh9B7a8mHy"
+      },
+      "d373f015": {
+        "hour": "16:00",
+        "host": "Górnik Zabrze",
+        "guest": "Ruch Chorzów",
+        "bet_1": "1Dj7GPEyJ4AbzNoZQxNLf2eaHwnoUpzyqk",
+        "bet_X": "17VdnYnsx2pe72zMyhrqReMXNrzPeUNTKC",
+        "bet_2": "1MEbf9Ask217RV73geS1B1Zohv7L4Ub96f"
+      },
+      "719d2abc": {
+        "hour": "16:00",
+        "host": "Jagiellonia Białystok",
+        "guest": "Wisła Kraków",
+        "bet_1": "1HVfU6SckR22p7dsMPDWdQtPvds6kCKg9Y",
+        "bet_X": "1E6dDFZoutHPhc6wVAhqaPPauZtUiAHM4n",
+        "bet_2": "1FnntiPq1Mm8kbS9UpzzMyfCH2oo1NeSxt"
+      },
+      "7db9a46f": {
+        "hour": "16:00",
+        "host": "Korona Kielce",
+        "guest": "Górnik Łęczna",
+        "bet_1": "1CkPMzvMRbGXYvcFXiPxSwGzvTxQoS91Zo",
+        "bet_X": "1L6Jkb3iq2WakDabLKp6jfdiKRuCfUPW1Y",
+        "bet_2": "1H5mZ9Wk9D3aS2MYdYmXq8pdK3G1AJSp17"
+      },
+      "9d4c4faa": {
+        "hour": "16:00",
+        "host": "Legia Warszawa",
+        "guest": "Piast Gliwice",
+        "bet_1": "1BaGq7LKQR7UXN1eDdfGYaQczRFeongo8U",
+        "bet_X": "1Lmv3DSqSRNxLTpdut6ANsDNDUfW3xHcHM",
+        "bet_2": "1HF4UNggPgfcWmKD4HiueDMxsmbsxLgvG1"
+      },
+      "6941b1b5": {
+        "hour": "16:00",
+        "host": "Śląsk Wrocław",
+        "guest": "Podbeskidzie Bielsko-Biała",
+        "bet_1": "1CCTU4EHazRDcg7zGdPqrxFUyFNMudjZAo",
+        "bet_X": "1P6PMVRbCRWaZiqpMbq4DTmN2TBTk3YpQr",
+        "bet_2": "1FUFX4jj1gSbJQLybcZErN5ZCErFkphdGD"
+      },
+      "be1d5ef6": {
+        "hour": "16:00",
+        "host": "Zawisza Bydgoszcz",
+        "guest": "Pogoń Szczecin",
+        "bet_1": "1Hp8iCo2iHCnGVobBQRc3C7DG8jQ69i7qm",
+        "bet_X": "18x9JpZwN8F64dSd4VHrPbccoTpS8bqPH",
+        "bet_2": "1QGVvZJqMNystabb5s9SBDk7BNqfB7FnzS"
+      }
+    }
+  ],
+  [
+    "2015-04-11",
+    {
+      "58e7935b": {
+        "hour": "14:00",
+        "host": "Burnley",
+        "guest": "Arsenal",
+        "bet_1": "1Fo6jK5KkMwedEnHhrtRXGpyvFtr7GEKLa",
+        "bet_X": "1BgiYJkjetWdacwuGHMaD8HsRtAuR7YJzp",
+        "bet_2": "1F3vnmdbnhp2WMLkcuefFrunHpHdTaSDgL"
+      },
+      "2822cafd": {
+        "hour": "14:00",
+        "host": "Liverpool",
+        "guest": "Newcastle United",
+        "bet_1": "1LgZGejmuYcWWFPbKGpGwevc5QSRtVYf1y",
+        "bet_X": "1FmyQue1uncwyvKLuyvV9kVWxSRrDK388R",
+        "bet_2": "1FkbyuBLZgpgW7y8m1FAR4uaFXR3UM82Ac"
+      },
+      "ae088ff2": {
+        "hour": "14:00",
+        "host": "Manchester United",
+        "guest": "Manchester City",
+        "bet_1": "1HPirWPP5SFC3pHudQvxHFLj2Ckn2aLofB",
+        "bet_X": "196MuyGS1Sqh9uMMBqTpcvoJqw2iFjS2uz",
+        "bet_2": "19vZTdDedEwHXS8Nk8zGh3dTWAJfRTbjY1"
+      },
+      "ef69a0fd": {
+        "hour": "14:00",
+        "host": "Queens Park Rangers",
+        "guest": "Chelsea",
+        "bet_1": "13D5Rz8LaThHTSp8goyLMiMgSFoYMrRYmY",
+        "bet_X": "19Czc8GYy7vhbgSmpbR5vZMwWi4BEABPip",
+        "bet_2": "192339uqyBTQ88Pd28nUC7Avvk6HdcmBLt"
+      },
+      "a8138c1f": {
+        "hour": "14:00",
+        "host": "Southampton",
+        "guest": "Hull City",
+        "bet_1": "1P99SWUXGj3E6rL3XRaH3JA2YSdFnSuXpi",
+        "bet_X": "1Bu4aZ5HbCgf5PyHKaBZ6cRgUFyvYD5oUR",
+        "bet_2": "14ZhQ7StAeAAfVNXeNXzSH5Uj66952F4LR"
+      },
+      "06dfc72d": {
+        "hour": "14:00",
+        "host": "Sunderland",
+        "guest": "Crystal Palace",
+        "bet_1": "1D3VmhUur6dtxxNF7MhhUBEtsge8Apscdx",
+        "bet_X": "1LhFRYgVChT6YanYF9HwQdE7NFGVDt7U1X",
+        "bet_2": "1esBKR5SvT919StmQdgWXbR1tsM1KcG4e"
+      },
+      "ab827f5a": {
+        "hour": "14:00",
+        "host": "Swansea City",
+        "guest": "Everton",
+        "bet_1": "12P59MhcjXzi4CPafLW5gzefAzAkFBwhfo",
+        "bet_X": "1PtN2vHThoiqbQAGMwnmCyMwCYnzT2abHi",
+        "bet_2": "18KL1tcw3HfG4bt5ZaQk4ozoN19xvpgVau"
+      },
+      "621a7d65": {
+        "hour": "14:00",
+        "host": "Tottenham Hotspur",
+        "guest": "Aston Villa",
+        "bet_1": "1jtz1WBQSvfV6xXNijygC9YhRrs9VRbHQ",
+        "bet_X": "1B2c5Ep3eHnvJ9VufYgETzaN7t9sE2qH6A",
+        "bet_2": "1KjvabeJ8NV7MLkXXKhCGqZd6xurXgktRf"
+      },
+      "cafd9d1d": {
+        "hour": "14:00",
+        "host": "West Bromwich Albion",
+        "guest": "Leicester City",
+        "bet_1": "16DUMXyKAd4AsY458XWT8KSW1Khn7u83EA",
+        "bet_X": "19doAtMoyCtVzqTt3c4gcdxLPJSQR6NK1R",
+        "bet_2": "1CzPXiHyzkk6zPmcAS3oq9jfo67qtTB3ZG"
+      },
+      "63dae888": {
+        "hour": "14:00",
+        "host": "West Ham United",
+        "guest": "Stoke City",
+        "bet_1": "12Q8sDSwQAZQAS9BC52QYAh5Ci863bnNHy",
+        "bet_X": "1P1B4bdmHQC8VpR64RpmsKt15QJvNAStN6",
+        "bet_2": "1FmFGVZ3Zy5P5hbHPH78SkqyrvmbBBNnCf"
+      },
+      "a9df3076": {
+        "hour": "16:00",
+        "host": "GKS Bełchatów",
+        "guest": "Zawisza Bydgoszcz",
+        "bet_1": "1Kms78pLiREVKGyy7VDW3yp4YwFDxFG5SG",
+        "bet_X": "1AMh9J77bW4Jzbff7MCRZ1hMRMSXxziFob",
+        "bet_2": "1msWZesADyJGY94zfJS8A7hUSVNHvsmj3"
+      },
+      "291d9b58": {
+        "hour": "16:00",
+        "host": "Górnik Łęczna",
+        "guest": "Podbeskidzie Bielsko-Biała",
+        "bet_1": "1H9XtLrzAdCcRqYzYGsWGSdRN9zhs3Bu7z",
+        "bet_X": "1e46Ub3NPEhXtKxxujFgBabqbRKgjSxYo",
+        "bet_2": "11fPx3im3VyaSgTNEVTVnxDSBF1GV3Y7J"
+      },
+      "faef474e": {
+        "hour": "16:00",
+        "host": "Lech Poznań",
+        "guest": "Korona Kielce",
+        "bet_1": "1GumMC7tkURMv85dQGgm3CV14d5i58NsCK",
+        "bet_X": "12qcwNs7A5Lv1Fj1Mw96Vv7mznMncd1VY4",
+        "bet_2": "1MbEW4aihzh6AD6q6evS2ttVLbo2GceHe2"
+      },
+      "0a555f5f": {
+        "hour": "16:00",
+        "host": "Lechia Gdańsk",
+        "guest": "Legia Warszawa",
+        "bet_1": "1GTukNDe1DWCXiso2GY7yqYiptWgtCFGJ5",
+        "bet_X": "1LVNP5vvfyLmZb5QxkAyYEVCqaTZFZwLXV",
+        "bet_2": "1E33DScmoxRryj3PHLtSpDVYDZaFFjuMk"
+      },
+      "7e7a227f": {
+        "hour": "16:00",
+        "host": "Piast Gliwice",
+        "guest": "Śląsk Wrocław",
+        "bet_1": "17FiyLqtDYEuQfhKNfd2o8AT9eTEvxjcjn",
+        "bet_X": "1KGL7We4smXtoMuCWy8NqQH4MSND5gfUWH",
+        "bet_2": "15A3EkH95VDSjLc7Ei48ftg1zwRi6DVCuc"
+      },
+      "3678b51c": {
+        "hour": "16:00",
+        "host": "Pogoń Szczecin",
+        "guest": "Jagiellonia Białystok",
+        "bet_1": "1VhoMNsfE7uhbuLXgHfxZLL1mcDQjViHr",
+        "bet_X": "1HdDv5nQrYo1ntZnpSnY4Zs7WDpmnUm3zb",
+        "bet_2": "1D2fUikAPwLPvSFS6n1Yb4mNNywM9aJoCH"
+      },
+      "bfed57e5": {
+        "hour": "16:00",
+        "host": "Ruch Chorzów",
+        "guest": "Cracovia Kraków",
+        "bet_1": "126xqy72xeukEzGVHBydnaGz5SuDJoz6Hw",
+        "bet_X": "1Kcz8s5qM9mhX6DkwBZVYUXTiUkdJM1azZ",
+        "bet_2": "1JDejLurEe6p8amo6HBS59bhz3ayDLrB7r"
+      },
+      "b066bca5": {
+        "hour": "16:00",
+        "host": "Wisła Kraków",
+        "guest": "Górnik Zabrze",
+        "bet_1": "1BUr89YeLmSz9NKDrTrW89qaCe5gHnva8",
+        "bet_X": "15itRzxveGRDVTpcyR2TVgfWUTF8d3ezke",
+        "bet_2": "1AJS1nGLy5EghmHzFjUpC8P1hJPWbo5FJB"
+      }
+    }
+  ]
+]

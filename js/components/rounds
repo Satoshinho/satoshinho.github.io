@@ -4,8 +4,25 @@
 //    - Match
 
 var DayList = React.createClass({displayName: "DayList",
+
+  getInitialState: function() {
+    return {
+      data: []
+    }
+  },
+
+  componentDidMount: function() {
+    $.get(this.props.source, function(result) {
+      if (this.isMounted()) {
+        this.setState({
+          data: result
+        })
+      }
+    }.bind(this))
+  },
+
   render: function() {
-    var dayNodes = this.props.data.map(function(day) {
+    var dayNodes = this.state.data.map(function(day) {
       return (
         React.createElement(Day, {data: day})
       )
@@ -33,7 +50,7 @@ var Day = React.createClass({displayName: "Day",
 
 var MatchList = React.createClass({displayName: "MatchList",
   render: function() {
-    var matchNodes = this.props.data.map(function(match) {
+    var matchNodes = $.map(this.props.data, function(match) {
       return (
         React.createElement(Match, React.__spread({},  match))
       )
@@ -48,16 +65,20 @@ var MatchList = React.createClass({displayName: "MatchList",
   }
 })
 
-var Match = React.createClass({displayName: "Match",
-  openModal: function() {
+var Match = React.createClass({displayName: "Match", openModal: function() {
     React.render(
       React.createElement(Modal, React.__spread({},  this.props)),
       document.getElementById('modal')
     )
   },
   render: function() {
-    var hostStyle = { backgroundImage: 'url(/img/logos/'+this.props.host_h+'.png)' }
-    var guestStyle = { backgroundImage: 'url(/img/logos/'+this.props.guest_h+'.png)' }
+    var logos = [
+      encodeURIComponent(this.props.host),
+      encodeURIComponent(this.props.guest)
+    ]
+    var hostStyle = { backgroundImage: 'url(/img/logos/'+ logos[0] +'.png)' }
+    var guestStyle = { backgroundImage: 'url(/img/logos/'+ logos[1] +'.png)' }
+
     return (
       React.createElement("div", {className: "match col-xs-12 col-sm-6 col-md-4", onClick: this.openModal}, 
         React.createElement("div", {href: "#", className: "thumbnail"}, 
@@ -141,15 +162,15 @@ var Modal = React.createClass({displayName: "Modal",
             ), 
             React.createElement("div", {className: "modal-body text-justify"}, 
               React.createElement("div", {className: "row"}, 
-                React.createElement(ResultBox, {hash:  this.props.host_h, onClick:  this.openModal.bind(this, this.props.bet_1) }, 
+                React.createElement(ResultBox, {hash:  encodeURIComponent(this.props.host), onClick:  this.openModal.bind(this, this.props.bet_1) }, 
                   React.createElement("h3", null, " Zwycięstwo gospodarzy ")
                 ), 
                 React.createElement(ResultBox, {onClick:  this.openModal.bind(this, this.props.bet_X) }, 
-                  React.createElement("div", {className: "tie", style: {backgroundImage: 'url(/img/logos/'+this.props.host_h+'.png)'}}), 
+                  React.createElement("div", {className: "tie", style: {backgroundImage: 'url(/img/logos/'+ encodeURIComponent(this.props.host) +'.png)'}}), 
                   React.createElement("h3", null, " Remis "), 
-                  React.createElement("div", {className: "tie", style: {backgroundImage: 'url(/img/logos/'+this.props.guest_h+'.png)'}})
+                  React.createElement("div", {className: "tie", style: {backgroundImage: 'url(/img/logos/'+ encodeURIComponent(this.props.guest) +'.png)'}})
                 ), 
-                React.createElement(ResultBox, {hash:  this.props.guest_h, onClick:  this.openModal.bind(this, this.props.bet_2) }, 
+                React.createElement(ResultBox, {hash:  encodeURIComponent(this.props.guest), onClick:  this.openModal.bind(this, this.props.bet_2) }, 
                   React.createElement("h3", null, " Zwycięstwo gości ")
                 )
               ), 
@@ -357,7 +378,7 @@ var NewBet = React.createClass({displayName: "NewBet",
 })
 
 React.render(
-  React.createElement(DayList, {data: data }),
+  React.createElement(DayList, {source: "/data/all.json"}),
   document.getElementById('content')
 )
 ;
