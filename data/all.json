@@ -21,7 +21,8 @@
         "guest": "Queens Park Rangers",
         "bet_1": "1LpyL5deVvyRTLmQsPm9tYtLR5y1mp8iLd",
         "bet_X": "1Jnp2DiQ1svpj8DshwvTbmottbDtT1dYTL",
-        "bet_2": "16zAvd71MKRrg2DHzyfEfXiYNnzBCqjht1"
+        "bet_2": "16zAvd71MKRrg2DHzyfEfXiYNnzBCqjht1",
+        "result": "3 - 1"
       },
       "7b27a0dc": {
         "hour": "15:00",
@@ -29,7 +30,8 @@
         "guest": "West Ham United",
         "bet_1": "1Ag5LG5tMKfVqZbb2bYaLqfn2s84fioZN5",
         "bet_X": "1CJWkdr7Bmqqa1p6ga9cHLFyV8k4KwL6ki",
-        "bet_2": "16LFKmh4Ga5imXQxFVUdJ2pFNF2AGTqFe4"
+        "bet_2": "16LFKmh4Ga5imXQxFVUdJ2pFNF2AGTqFe4",
+        "result": "3 - 0"
       },
       "1cdefbfe": {
         "hour": "15:00",
@@ -45,7 +47,8 @@
         "guest": "Hull City",
         "bet_1": "1F7YopDwAU4piR5ohVMzqRwLRgfhVgu6Yg",
         "bet_X": "14VV84mmLiJd4P7hbyY75BB5Lph9j84XBs",
-        "bet_2": "1MD2cYbPVbxEMN5NHco71kKHYLSmE14YJr"
+        "bet_2": "1MD2cYbPVbxEMN5NHco71kKHYLSmE14YJr",
+        "result": "0 - 0"
       },
       "41edaa59": {
         "hour": "15:00",
@@ -53,7 +56,8 @@
         "guest": "Aston Villa",
         "bet_1": "1iGbGBJ4J43ZZ6MqHHYpYoornLqepHQCK",
         "bet_X": "1395a5YtLNJHM3LGdNsmCsS7eRFX7xR2Db",
-        "bet_2": "1P1EiFfDMq5EUcdmmC9rCChF7Mor3tgUGF"
+        "bet_2": "1P1EiFfDMq5EUcdmmC9rCChF7Mor3tgUGF",
+        "result": "0 - 4"
       },
       "1f831d8e": {
         "hour": "15:00",
@@ -61,7 +65,8 @@
         "guest": "Stoke City",
         "bet_1": "1BLoUQCKA6iT2gVeacyDSRxzXBicPdA6nF",
         "bet_X": "1Q6hSVS1tyHBaYGMb8QKvBtcZbp2XkAmMS",
-        "bet_2": "18fNaCzKEjD2zpFupr3dpNsY1DmWFSaJuN"
+        "bet_2": "18fNaCzKEjD2zpFupr3dpNsY1DmWFSaJuN",
+        "result": "1 - 0"
       },
       "c1a7f896": {
         "hour": "17:30",
@@ -69,7 +74,8 @@
         "guest": "Manchester City",
         "bet_1": "16WbvwfCiBhhjfdhDBwyuHn4H9EronDB88",
         "bet_X": "16e93dJVRh2DEHv2aiqv74bTnnC6bKTqY6",
-        "bet_2": "1386vJRSaEMHr9JRx7zwNbKhAnJRPdESog"
+        "bet_2": "1386vJRSaEMHr9JRx7zwNbKhAnJRPdESog",
+        "result": "1 - 0"
       },
       "d5b9ca1a": {
         "hour": "17:00",
@@ -93,7 +99,8 @@
         "guest": "Podbeskidzie Bielsko-Biała",
         "bet_1": "1PFs8xEDah1YUGZ5hehdwbgunCpgirEbQ8",
         "bet_X": "155wTiH9FhFnzQ3eyF39y8eN9Zwg87SFaQ",
-        "bet_2": "1CXaknAGVWGsXNANQ8Up2576Q4YCtKyBJo"
+        "bet_2": "1CXaknAGVWGsXNANQ8Up2576Q4YCtKyBJo",
+        "result": "3 - 3"
       },
       "cd6099d6": {
         "hour": "17:00",
@@ -101,7 +108,8 @@
         "guest": "Górnik Łęczna",
         "bet_1": "1DMeUHN5fyWRhpvebS3SckAfq5SgH5oXn",
         "bet_X": "1CbxY8X2B3jRLfeh25BasGHvAYSvXUDRax",
-        "bet_2": "1GSWUZAtRVzwDsGhDsXsXpqabdP3hXCrgV"
+        "bet_2": "1GSWUZAtRVzwDsGhDsXsXpqabdP3hXCrgV",
+        "result": "2 - 1"
       },
       "2c7b7446": {
         "hour": "17:00",
@@ -133,7 +141,8 @@
         "guest": "Lech Poznań",
         "bet_1": "18NVND7GLf6JcgwLgxV7A8uaQqbsxqjHM4",
         "bet_X": "1BwPDX3qRc9VRCMKSxRtLCbcLqdEazoqcf",
-        "bet_2": "1GCMNA5tQxdQvSN5G6FaMCQjqMXu5363vi"
+        "bet_2": "1GCMNA5tQxdQvSN5G6FaMCQjqMXu5363vi",
+        "result": "1 - 0"
       }
     }
   ],
