@@ -14,8 +14,11 @@ var DayList = React.createClass({displayName: "DayList",
   componentDidMount: function() {
     $.get(this.props.source, function(result) {
       if (this.isMounted()) {
+        var today = moment().format('YYYY-MM-DD')
         this.setState({
-          data: result
+          data: result.filter(function(row) {
+            return row[0] >= today
+          })
         })
       }
     }.bind(this))
