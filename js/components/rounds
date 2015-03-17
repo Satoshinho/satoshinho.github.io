@@ -12,22 +12,33 @@ var DayList = React.createClass({displayName: "DayList",
   },
 
   componentDidMount: function() {
-    $.get(this.props.source, function(result) {
+    $.get(this.props.source, function(source) {
       if (this.isMounted()) {
-        var today = moment().format('YYYY-MM-DD')
-        this.setState({
-          data: result.filter(function(row) {
-            return row[0] >= today
+
+          var result = {}
+          var today = moment().format('YYYY-MM-DD')
+
+          $.each(source, function(id, match){
+              if(match['result']) return
+              var key = match['datetime'].split(' ')[0]
+              if(key >= today) {
+                  result[key] = result[key] || []
+                  result[key].push(match)
+              }
           })
+
+        this.setState({
+          data: result
         })
       }
     }.bind(this))
   },
 
   render: function() {
-    var dayNodes = this.state.data.map(function(day) {
+    var data = this.state.data
+    var dayNodes = $.map(Object.keys(data).sort(), function(day) {
       return (
-        React.createElement(Day, {data: day})
+        React.createElement(Day, {day: day, games: data[day]})
       )
     })
     return (
@@ -43,9 +54,9 @@ var Day = React.createClass({displayName: "Day",
     return (
       React.createElement("div", {className: "panel panel-default"}, 
         React.createElement("div", {className: "panel-heading"}, 
-          React.createElement("h3", {className: "panel-title"},  this.props.data[0] )
+          React.createElement("h3", {className: "panel-title"},  this.props.day)
         ), 
-        React.createElement(MatchList, {data:  this.props.data[1] })
+        React.createElement(MatchList, {data:  this.props.games})
       )
     )
   }
@@ -88,7 +99,7 @@ var Match = React.createClass({displayName: "Match", openModal: function() {
           React.createElement("img", {"data-src": "holder.js/100x180"}), 
           React.createElement("div", {className: "caption"}, 
             React.createElement("div", {className: "match_logo", style: hostStyle}), 
-            React.createElement("h3", null, React.createElement("small", null, this.props.hour), " ", this.props.host, " vs. ", this.props.guest), 
+            React.createElement("h3", null, React.createElement("small", null, this.props.datetime.split(' ')[1]), " ", this.props.host, " vs. ", this.props.guest), 
             React.createElement("div", {className: "match_logo", style: guestStyle})
           )
         )
